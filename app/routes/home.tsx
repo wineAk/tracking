@@ -1,18 +1,14 @@
 import type { Route } from "./+types/home";
-
 import { Suspense } from "react";
 import { Await, Link } from "react-router";
 import { ArrowRightIcon } from "lucide-react";
-
 import { fetchWikipedia, type FetchWikipedia } from "@/lib/fetchWikipedia";
-import Spinner from "@/components/spinner";
+import Fallback from "@/components/fallback";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -52,7 +48,7 @@ export async function clientLoader() {
 export default function Home({ loaderData }: Route.ComponentProps) {
   const { wikipedia } = loaderData;
   return (
-    <article>
+    <article className="h-full">
       <Suspense fallback={<Fallback />}>
         <Await resolve={wikipedia}>{(data) => <Resolve data={data} />}</Await>
       </Suspense>
@@ -60,17 +56,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   );
 }
 
-function Fallback() {
-  return (
-    <section className="flex justify-center items-center h-24">
-      <Spinner />
-    </section>
-  );
-}
-
 function Resolve({ data }: { data: FetchWikipedia[] }) {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-8">
       {data.map(({ title, summary, lang }) => (
         <Card key={title}>
           <CardHeader>

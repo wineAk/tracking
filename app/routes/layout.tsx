@@ -6,10 +6,10 @@ import logoLight from "@/images/logo-light.svg";
 export default function Layout() {
   return (
     <>
-      <header className="pb-16">
+      <header>
         <Header />
       </header>
-      <main className="max-w-screen-lg mx-auto p-6">
+      <main className="h-full max-w-screen-lg mx-auto p-6 pt-16">
         <Outlet />
       </main>
     </>
@@ -18,7 +18,7 @@ export default function Layout() {
 
 function Header() {
   return (
-    <nav className="h-16 w-full p-4 fixed bg-background/50 backdrop-blur-sm border-b">
+    <nav className="h-16 w-full p-4 fixed z-10 bg-background/50 backdrop-blur-sm border-b">
       <Link to="/test_wikipedia/" className="h-full flex">
         <img
           src={logoLight}
