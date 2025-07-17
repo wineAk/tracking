@@ -36,6 +36,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+        <script src="public/tracking.js?v=2.0.0"></script>
       </body>
     </html>
   );
