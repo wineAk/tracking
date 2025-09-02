@@ -12,6 +12,7 @@ export default function Layout() {
       <main className="h-full max-w-screen-lg mx-auto p-6 pt-16">
         <Outlet />
       </main>
+      <script src={`${import.meta.env.BASE_URL}tracking.js?v=2.0.0`}></script>
     </>
   );
 }
