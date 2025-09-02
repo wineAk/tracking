@@ -36,7 +36,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
-        <script src={`${import.meta.env.BASE_URL}tracking_test.js?v=2.0.0`}></script>
       </body>
     </html>
   );
