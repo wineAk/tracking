@@ -74,7 +74,7 @@ function Resolve({ data }: { data: FetchWikipedia[] }) {
           </CardContent>
           <CardFooter className="mt-auto ml-auto">
             <Button variant="ghost" asChild>
-              <Link to={`${import.meta.env.BASE_URL}${title}`}>
+              <Link to={`/${title}`}>
                 <span>詳細</span>
                 <ArrowRightIcon className="w-4 h-4" />
               </Link>
