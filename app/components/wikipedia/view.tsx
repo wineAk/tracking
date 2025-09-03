@@ -1,36 +1,7 @@
-import type { Route } from "./+types/wikipedia";
-import { Suspense, useRef, useEffect, useState } from "react";
-import { Await } from "react-router";
-import { fetchWikipedia, type FetchWikipedia } from "@/lib/fetchWikipedia";
-import Fallback from "@/components/fallback";
+import { useRef, useEffect, useState } from "react";
+import { type FetchWikipedia } from "@/lib/fetchWikipedia";
 
-export function meta({ data }: Route.MetaArgs) {
-  const title = `W - ${data?.title ?? "Wikipedia"}`;
-  return [
-    { title },
-    { name: "description", content: `${title} - Wikipediaの解説ページ` },
-  ];
-}
-
-export async function clientLoader({ params }: Route.ComponentProps) {
-  const { name } = params;
-  const { title } = await fetchWikipedia(name);
-  const wikipediaPromise = fetchWikipedia(name);
-  return { title, wikipedia: wikipediaPromise };
-}
-
-export default function Wikipedia({ loaderData }: Route.ComponentProps) {
-  const { wikipedia } = loaderData;
-  return (
-    <article className="h-full">
-      <Suspense fallback={<Fallback />}>
-        <Await resolve={wikipedia}>{(data) => <Resolve data={data} />}</Await>
-      </Suspense>
-    </article>
-  );
-}
-
-function Resolve({ data }: { data: FetchWikipedia }) {
+export default function View({ data }: { data: FetchWikipedia }) {
   const { html } = data;
   const [height, setHeight] = useState(0);
   const iframeRef = useRef<HTMLIFrameElement>(null);

@@ -1,6 +1,7 @@
 import type { WikipediaResponse } from "@/types/wikipedia";
 import type { WtfJson } from "@/types/wtf_wikipedia";
 import wtf from "wtf_wikipedia";
+import wikipediaList from "@/config/wikipedia-list";
 
 const errorObject = {
   found: false,
@@ -10,6 +11,11 @@ const errorObject = {
   json: {} as WtfJson,
   html: undefined,
 };
+
+export async function fetchWikipediaList() {
+  const wikipediaPromise = Promise.all(wikipediaList().map(fetchWikipedia));
+  return { wikipedia: wikipediaPromise };
+}
 
 export async function fetchWikipedia(name: string) {
   try {
