@@ -1,1 +1,0 @@
-import{w as s,p as t,O as r}from"./chunk-EF7DTUVF-DcPiyVfu.js";const a="tracking",e=s(function(){return t.jsxs(t.Fragment,{children:[t.jsx("main",{className:"h-full max-w-screen-lg mx-auto p-6 pt-16",children:t.jsx(r,{})}),t.jsx("script",{src:`/${a}/tracking.js?v=2.0.0`})]})});export{e as default};
