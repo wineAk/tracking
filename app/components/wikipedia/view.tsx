@@ -21,7 +21,7 @@ export default function View({ data }: { data: FetchWikipedia }) {
     return () => window.removeEventListener("message", handleMessage);
   }, []);
   return (
-    <section className="py-8">
+    <section>
       <div className="relative" style={{ height }}>
         <div
           className="absolute inset-0 z-1 bg-neutral-300/10 pointer-events-all cursor-not-allowed -my-2 -mx-4 rounded-lg"

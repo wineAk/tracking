@@ -1,36 +1,34 @@
 import type { Route } from "./+types/index";
 import { Link } from "react-router";
 import { ArrowRightIcon } from "lucide-react";
-
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableRow } from "@/components/ui/table";
 import TypographyH2 from "@/components/typography/h2";
-import Main from "@/components/wikipedia/main";
 import { linkList, type LinkListItemType } from "@/config/link-list";
 
 export default function Index() {
   const links = linkList();
   const { prod, test } = links;
   return (
-    <Main title="HOME">
-      <section className="space-y-8">
-        {Cards({ title: "本番", linksItem: prod })}
-        {Cards({ title: "テスト", linksItem: test })}
-      </section>
-    </Main>
+    <section className="space-y-8">
+      {Cards({ type: "prod", linksItem: prod })}
+      {Cards({ type: "test", linksItem: test })}
+    </section>
   );
 }
 
 type CardsProps = {
-  title: string;
+  type: "prod" | "test";
   linksItem: LinkListItemType[];
 };
 
-function Cards({ title, linksItem }: CardsProps) {
+function Cards({ type, linksItem }: CardsProps) {
+  const isProd = type === "prod";
+  const title = isProd ? "本番" : "テスト";
+  const theme = isProd ? "default" : "red";
   return (
-    <div className="space-y-4">
+    <div className="space-y-4" data-theme={theme}>
       <TypographyH2>{title}</TypographyH2>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {linksItem.map(({ version, cl_code, cl_company, description }) => {
@@ -59,7 +57,7 @@ function Cards({ title, linksItem }: CardsProps) {
                 </Table>
               </CardContent>
               <CardFooter className="mt-auto ml-auto">
-                <Button variant="ghost" asChild>
+                <Button asChild>
                   <Link to={href}>
                     <span>切り替え</span>
                     <ArrowRightIcon className="w-4 h-4" />

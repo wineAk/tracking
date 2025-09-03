@@ -20,7 +20,7 @@ export default function Cards({ data }: { data: FetchWikipedia[] }) {
         <Card key={title}>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Badge variant="outline">{lang}</Badge>
+              <Badge>{lang}</Badge>
               {title}
             </CardTitle>
           </CardHeader>
@@ -30,7 +30,7 @@ export default function Cards({ data }: { data: FetchWikipedia[] }) {
             </div>
           </CardContent>
           <CardFooter className="mt-auto ml-auto">
-            <Button variant="ghost" asChild>
+            <Button asChild>
               <Link to={`${path}/${title}`}>
                 <span>詳細</span>
                 <ArrowRightIcon className="w-4 h-4" />

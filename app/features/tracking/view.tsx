@@ -1,12 +1,10 @@
 import type { Route } from "./+types/view";
 import { Suspense } from "react";
-import { Await, useOutletContext } from "react-router";
+import { Await } from "react-router";
 import Fallback from "@/components/fallback";
-import Main from "@/components/wikipedia/main";
 import View from "@/components/wikipedia/view";
 import { createMetaTitle } from "@/lib/createTitle";
 import { fetchWikipedia } from "@/lib/fetchWikipedia";
-import { type LinkListItemType } from "@/config/link-list";
 
 export function meta({data, matches}: Route.MetaArgs) {
   const subtitle = data?.subtitle ?? "";
@@ -26,13 +24,9 @@ export async function clientLoader({ params }: Route.ComponentProps) {
 
 export default function Wikipedia({ loaderData }: Route.ComponentProps) {
   const { wikipedia } = loaderData;
-  const { data } = useOutletContext<{ data: LinkListItemType }>();
-  const { version, cl_code, cl_company } = data;
   return (
-    <Main title={`Web行動解析 ${version}`} subtitle={`${cl_code} : ${cl_company}`}>
-      <Suspense fallback={<Fallback />}>
-        <Await resolve={wikipedia}>{(data) => <View data={data} />}</Await>
-      </Suspense>
-    </Main>
+    <Suspense fallback={<Fallback />}>
+      <Await resolve={wikipedia}>{(data) => <View data={data} />}</Await>
+    </Suspense>
   );
 }
