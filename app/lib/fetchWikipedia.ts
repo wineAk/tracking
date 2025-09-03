@@ -20,16 +20,16 @@ export async function fetchWikipediaList() {
 export async function fetchWikipedia(name: string) {
   try {
     const ja = await fetchFromWikipedia("ja", name);
-    if (ja.found) {
+    if (ja.found && ja.summary.length > 0) {
       return { ...ja, lang: "ja" };
     }
     const en = await fetchFromWikipedia("en", name);
-    if (en.found) {
+    if (en.found && en.summary.length > 0) {
       return { ...en, lang: "en" };
     }
-    return { ...errorObject, title: name, lang: "error" };
+    return { ...errorObject, title: name, lang: "-" };
   } catch (e) {
-    return { ...errorObject, title: name, lang: "error" };
+    return { ...errorObject, title: name, lang: "-" };
   }
 }
 
