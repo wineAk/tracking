@@ -1,6 +1,7 @@
 import { Link } from "react-router";
-
+import { Badge } from "@/components/ui/badge";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
+import { Separator } from "@/components/ui/separator";
 import { linkList, type LinkListItemType } from "@/config/link-list";
 
 import logoDark from "@/images/logo-dark.svg";
@@ -21,11 +22,15 @@ export default function Header() {
             <NavigationMenuItem>
               <NavigationMenuTrigger>切り替え</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[300px] gap-4">
-                  {NavigationMenuItems({ title: "本番", linksItem: prod })}
-                  {NavigationMenuItems({ title: "テスト", linksItem: test })}
-                  <p className="text-xs text-muted-foreground p-2">テスト環境は test-new.saaske.com から確認できます</p>
-                </ul>
+                <nav className="w-[300px] space-y-4">
+                  <ul>{NavigationMenuItems({ type: "prod", linksItem: prod })}</ul>
+                  <ul>{NavigationMenuItems({ type: "test", linksItem: test })}</ul>
+                  <Separator />
+                  <ul className="text-xs text-muted-foreground p-2 mb-2">
+                    <li>テスト環境は test-new.saaske.com から可能</li>
+                    <li>ブランチの切り替え・クーロン設定が必要</li>
+                  </ul>
+                </nav>
               </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
@@ -36,20 +41,26 @@ export default function Header() {
 }
 
 type NavigationMenuItemsProps = {
-  title: string;
+  type: "prod" | "test";
   linksItem: LinkListItemType[];
 };
 
-function NavigationMenuItems({ title, linksItem }: NavigationMenuItemsProps) {
+function NavigationMenuItems({ type, linksItem }: NavigationMenuItemsProps) {
+  const isProd = type === "prod";
+  const title = isProd ? "本番" : "テスト";
+  const theme = isProd ? "default" : "red";
   return (
-    <li>
+    <li data-theme={theme}>
       <p className="text-sm font-medium p-2">{title}</p>
       {linksItem.map(({ version, cl_code, cl_company }) => {
         const href = `/${version}/${cl_code}`;
         return (
           <NavigationMenuLink asChild key={href}>
             <Link to={href}>
-              <div className="font-medium">Web行動解析 {version}</div>
+              <div className="font-medium space-x-2">
+                <Badge className="h-2.5 w-2.5 rounded-full p-0" />
+                <span>Web行動解析 {version}</span>
+              </div>
               <div className="text-muted-foreground">
                 {cl_code}：{cl_company}
               </div>
