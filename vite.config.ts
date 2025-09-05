@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
-  const directory = env.VITE_REPOSITORY_NAME;
+  const directory = env.VITE_REPOSITORY_NAME || 'test_wikipedia';
   const isDev = mode === "development";
   return {
     base: isDev ? `/${directory}` : `/${directory}/`,

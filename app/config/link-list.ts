@@ -13,6 +13,7 @@ export type LinkListType = {
 };
 
 export function linkList(): LinkListType {
+  const repositoryName = import.meta.env.VITE_REPOSITORY_NAME;
   return {
     prod: [
       {
@@ -26,7 +27,7 @@ export function linkList(): LinkListType {
       {
         type: "prod",
         version: "v2",
-        script: `/${import.meta.env.VITE_REPOSITORY_NAME}/c12579546/tracking.js?v=2.0.0`,
+        script: `/${repositoryName}/c12579546/tracking.js?v=2.0.0`,
         cl_code: "c12579546",
         cl_company: "株式会社サスケケ",
         description: "",
@@ -44,7 +45,7 @@ export function linkList(): LinkListType {
       {
         type: "test",
         version: "v2",
-        script: `/${import.meta.env.VITE_REPOSITORY_NAME}/c00102027/tracking.js?v=2.0.0`,
+        script: `/${repositoryName}/c00102027/tracking.js?v=2.0.0`,
         cl_code: "c00102027",
         cl_company: "デモシステム株式会社",
         description: "",
