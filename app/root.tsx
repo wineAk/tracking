@@ -35,15 +35,17 @@ export function meta({}: Route.MetaArgs) {
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ja" className="min-w-xs">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
-        <Links />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+    <ThemeProvider defaultTheme="system" storageKey={storageKey}>
+      <ColorProvider defaultColor="default">
+        <html lang="ja" className="min-w-xs">
+          <head>
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <Meta />
+            <Links />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
               (function() {
                 try {
                   const theme = localStorage.getItem('${storageKey}') || 'dark';
@@ -60,27 +62,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 }
               })();
             `,
-          }}
-        />
-      </head>
-      <body data-color="default">
-        <Header />
-        {children}
-        <ScrollRestoration />
-        <Scripts />
-      </body>
-    </html>
+              }}
+            />
+          </head>
+          <body data-color="default">
+            <Header />
+            {children}
+            <ScrollRestoration />
+            <Scripts />
+          </body>
+        </html>
+      </ColorProvider>
+    </ThemeProvider>
   );
 }
 
 export default function App() {
-  return (
-    <ThemeProvider defaultTheme="system" storageKey={storageKey}>
-      <ColorProvider defaultColor="default">
-        <Outlet />
-      </ColorProvider>
-    </ThemeProvider>
-  );
+  return <Outlet />;
 }
 
 export function HydrateFallback() {
