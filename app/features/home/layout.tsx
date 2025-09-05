@@ -2,8 +2,11 @@ import type { Route } from "./+types/layout";
 import { Outlet } from "react-router";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import TypographyH1 from "@/components/typography/h1";
+import { useColor, type Color } from "@/components/color/provider";
 
 export default function Layout() {
+  const { setColor } = useColor();
+  setColor("default");
   return (
     <>
       <main className="h-dvh">

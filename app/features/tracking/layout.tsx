@@ -5,8 +5,8 @@ import TypographyH1 from "@/components/typography/h1";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { createMetaTitle } from "@/lib/createTitle";
-// 追加: useEffectとuseRefをインポート
 import { useEffect, useRef } from "react";
+import { useColor, type Color } from "@/components/color/provider";
 
 export function meta({ data }: Route.MetaArgs) {
   const version = data?.version ?? "";
@@ -29,7 +29,8 @@ export default function Layout({ loaderData }: Route.ComponentProps) {
   if (!loaderData) return null;
   const { type, version, script, cl_code, cl_company } = loaderData;
   const isProd = type === "prod";
-  const theme = isProd ? "default" : "red";
+  const { setColor } = useColor();
+  setColor(type);
 
   // スクリプト読み込み用のref
   const scriptLoadedRef = useRef(false);
@@ -66,7 +67,7 @@ export default function Layout({ loaderData }: Route.ComponentProps) {
 
   return (
     <>
-      <main className="h-dvh" data-theme={theme}>
+      <main className="h-dvh">
         <ScrollArea
           type="always"
           className="
@@ -85,7 +86,7 @@ export default function Layout({ loaderData }: Route.ComponentProps) {
                 {cl_code} : {cl_company}
               </p>
             </section>
-            <Outlet context={{ data: loaderData }} />
+            <Outlet context={{ data: loaderData }} key={`${version}-${cl_code}`} />
           </article>
         </ScrollArea>
       </main>

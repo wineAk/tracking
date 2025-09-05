@@ -2,6 +2,7 @@ import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration }
 import Header from "@/components/header";
 import Fallback from "@/components/fallback";
 import { ThemeProvider } from "@/components/theme/provider";
+import { ColorProvider } from "@/components/color/provider";
 
 import type { Route } from "./+types/root";
 import "./app.css";
@@ -62,20 +63,24 @@ export function Layout({ children }: { children: React.ReactNode }) {
           }}
         />
       </head>
-      <ThemeProvider defaultTheme="system" storageKey={storageKey}>
-        <body>
-          <Header />
-          {children}
-          <ScrollRestoration />
-          <Scripts />
-        </body>
-      </ThemeProvider>
+      <body data-color="default">
+        <Header />
+        {children}
+        <ScrollRestoration />
+        <Scripts />
+      </body>
     </html>
   );
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <ThemeProvider defaultTheme="system" storageKey={storageKey}>
+      <ColorProvider defaultColor="default">
+        <Outlet />
+      </ColorProvider>
+    </ThemeProvider>
+  );
 }
 
 export function HydrateFallback() {

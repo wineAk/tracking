@@ -59,9 +59,8 @@ type NavigationMenuItemsProps = {
 function NavigationMenuItems({ type, linksItem }: NavigationMenuItemsProps) {
   const isProd = type === "prod";
   const title = isProd ? "本番" : "テスト";
-  const theme = isProd ? "default" : "red";
   return (
-    <li data-theme={theme}>
+    <li data-color={type}>
       <p className="text-sm font-medium p-2">{title}</p>
       {linksItem.map(({ version, cl_code, cl_company }) => {
         const href = `/${version}/${cl_code}`;

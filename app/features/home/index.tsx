@@ -26,9 +26,8 @@ type CardsProps = {
 function Cards({ type, linksItem }: CardsProps) {
   const isProd = type === "prod";
   const title = isProd ? "本番" : "テスト";
-  const theme = isProd ? "default" : "red";
   return (
-    <div className="space-y-4" data-theme={theme}>
+    <div className="space-y-4" data-color={type}>
       <TypographyH2>{title}</TypographyH2>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {linksItem.map(({ version, cl_code, cl_company, description }) => {
