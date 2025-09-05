@@ -15,11 +15,10 @@ export function meta({ data, matches }: Route.MetaArgs) {
   return [{ title: title }];
 }
 
-export async function clientLoader({ params }: Route.ComponentProps) {
+export function clientLoader({ params }: Route.ComponentProps) {
   const { name } = params;
-  const { title } = await fetchWikipedia(name);
   const wikipediaPromise = fetchWikipedia(name);
-  return { subtitle: title, wikipedia: wikipediaPromise };
+  return { subtitle: name, wikipedia: wikipediaPromise };
 }
 
 export default function Wikipedia({ loaderData }: Route.ComponentProps) {

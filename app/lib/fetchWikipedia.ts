@@ -12,7 +12,7 @@ const errorObject = {
   html: undefined,
 };
 
-export async function fetchWikipediaList() {
+export function fetchWikipediaList() {
   const wikipediaPromise = Promise.all(wikipediaList().map(fetchWikipedia));
   return { wikipedia: wikipediaPromise };
 }

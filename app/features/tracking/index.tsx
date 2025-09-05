@@ -5,10 +5,11 @@ import { Fallback } from "@/components/fallback";
 import Cards from "@/components/wikipedia/cards";
 import { fetchWikipediaList } from "@/lib/fetchWikipedia";
 
-export async function clientLoader() {
-  const { wikipedia } = await fetchWikipediaList();
+export function clientLoader() {
+  const { wikipedia } = fetchWikipediaList();
   return { wikipedia };
 }
+
 
 export default function Index({ loaderData }: Route.ComponentProps) {
   const { wikipedia } = loaderData;
