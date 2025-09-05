@@ -1,0 +1,1 @@
+import{p as e}from"./chunk-EF7DTUVF-Cm3DCMif.js";function r(){return e.jsx("div",{className:"w-24 h-24 border-6 border-secondary border-t-primary rounded-full animate-spin"})}function n(){return e.jsx("section",{className:"absolute left-0 top-0 w-full h-full flex justify-center items-center z-10",children:e.jsx(r,{})})}export{n as F};

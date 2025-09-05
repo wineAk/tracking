@@ -1,4 +1,4 @@
-import{w as s,p as a,O as e}from"./chunk-EF7DTUVF-C60KZCPR.js";import{S as l,T as t}from"./h1-DguANJoK.js";import"./index-BHHFSTc9.js";import"./index-UcOlxvxH.js";import"./utils-kN5vndzB.js";const m=s(function(){return a.jsx(a.Fragment,{children:a.jsx("main",{className:"h-dvh",children:a.jsx(l,{type:"always",className:`
+import{w as s,p as a,O as e}from"./chunk-EF7DTUVF-Cm3DCMif.js";import{S as l,T as t}from"./h1-BPt8PACG.js";import"./index-BSoXQ9IS.js";import"./index-DJ0Nz-gs.js";import"./utils-BYnb3M0C.js";const m=s(function(){return a.jsx(a.Fragment,{children:a.jsx("main",{className:"h-dvh",children:a.jsx(l,{type:"always",className:`
               h-dvh
               [&>[data-slot='scroll-area-viewport']>div]:h-full
               [&>[data-slot='scroll-area-scrollbar']]:pt-16
