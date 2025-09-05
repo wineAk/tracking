@@ -1,12 +1,12 @@
 import type { Route } from "./+types/view";
 import { Suspense } from "react";
 import { Await } from "react-router";
-import Fallback from "@/components/fallback";
+import { Fallback } from "@/components/fallback";
 import View from "@/components/wikipedia/view";
 import { createMetaTitle } from "@/lib/createTitle";
 import { fetchWikipedia } from "@/lib/fetchWikipedia";
 
-export function meta({data, matches}: Route.MetaArgs) {
+export function meta({ data, matches }: Route.MetaArgs) {
   const subtitle = data?.subtitle ?? "";
   // 2つ目のレイヤーから取得
   const version = matches[1]?.data?.version;

@@ -1,6 +1,6 @@
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import Header from "@/components/header";
-import Fallback from "@/components/fallback";
+import { Fallback } from "@/components/fallback";
 import { ThemeProvider } from "@/components/theme/provider";
 import { ColorProvider } from "@/components/color/provider";
 
@@ -37,33 +37,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <ThemeProvider defaultTheme="system" storageKey={storageKey}>
       <ColorProvider defaultColor="default">
-        <html lang="ja" className="min-w-xs">
+        <html lang="ja" className="min-w-xs dark">
           <head>
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <Meta />
             <Links />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-              (function() {
-                try {
-                  const theme = localStorage.getItem('${storageKey}') || 'dark';
-                  const root = document.documentElement;
-                  if (theme === 'system') {
-                    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-                    root.classList.add(systemTheme);
-                  } else {
-                    root.classList.add(theme);
-                  }
-                } catch (e) {
-                  // localStorage が利用できない場合はデフォルトでsystem
-                  document.documentElement.classList.add('system');
-                }
-              })();
-            `,
-              }}
-            />
           </head>
           <body data-color="default">
             <Header />
@@ -83,9 +62,9 @@ export default function App() {
 
 export function HydrateFallback() {
   return (
-    <main className="h-dvh bg-background">
-      <Fallback />
-    </main>
+    <>
+      <Fallback className="bg-background z-10" />
+    </>
   );
 }
 
