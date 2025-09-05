@@ -1,18 +1,14 @@
-import {
-  isRouteErrorResponse,
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "react-router";
+import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import Header from "@/components/header";
+import Fallback from "@/components/fallback";
+import { ThemeProvider } from "@/components/theme/provider";
 
 import type { Route } from "./+types/root";
 import "./app.css";
 
 const directory = import.meta.env.VITE_REPOSITORY_NAME;
 const siteName = import.meta.env.VITE_SITE_NAME;
+const storageKey = "vite-ui-theme";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,32 +29,61 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: `${siteName}` },
-  ];
+  return [{ title: `${siteName}` }];
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="min-w-xs">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const theme = localStorage.getItem('${storageKey}') || 'dark';
+                  const root = document.documentElement;
+                  if (theme === 'system') {
+                    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                    root.classList.add(systemTheme);
+                  } else {
+                    root.classList.add(theme);
+                  }
+                } catch (e) {
+                  // localStorage が利用できない場合はデフォルトでsystem
+                  document.documentElement.classList.add('system');
+                }
+              })();
+            `,
+          }}
+        />
       </head>
-      <body>
-        <Header />
-        {children}
-        <ScrollRestoration />
-        <Scripts />
-      </body>
+      <ThemeProvider defaultTheme="system" storageKey={storageKey}>
+        <body>
+          <Header />
+          {children}
+          <ScrollRestoration />
+          <Scripts />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
 
 export default function App() {
   return <Outlet />;
+}
+
+export function HydrateFallback() {
+  return (
+    <main className="h-dvh bg-background">
+      <Fallback />
+    </main>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
@@ -68,10 +93,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 
   if (isRouteErrorResponse(error)) {
     message = error.status === 404 ? "404" : "Error";
-    details =
-      error.status === 404
-        ? "The requested page could not be found."
-        : error.statusText || details;
+    details = error.status === 404 ? "The requested page could not be found." : error.statusText || details;
   } else if (import.meta.env.DEV && error && error instanceof Error) {
     details = error.message;
     stack = error.stack;
