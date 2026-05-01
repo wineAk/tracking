@@ -1,0 +1,1 @@
+function e({subtitle:e,title:t}){let n=`トラッキング`;return e?`${e} | ${n} ${t}`:`${n} ${t}`}export{e as t};
