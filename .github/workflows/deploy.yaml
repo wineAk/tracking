@@ -1,4 +1,4 @@
-name: Deploy React Router App to GitHub Pages
+name: Deploy Astro App to GitHub Pages
 
 on:
   push:
@@ -24,11 +24,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build React Router app
+      - name: Build Astro app
         run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/client
+          publish_dir: dist

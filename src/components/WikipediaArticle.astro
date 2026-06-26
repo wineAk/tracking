@@ -1,0 +1,56 @@
+---
+import Badge from "@/components/starwind/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/starwind/card";
+import type { FetchWikipedia } from "@/lib/wikipedia";
+import type { WtfParagraph, WtfSection } from "@/types/wtf_wikipedia";
+
+type Props = {
+  item: FetchWikipedia;
+};
+
+const { item } = Astro.props;
+const sections = (item.json.sections ?? []).filter(hasReadableSection).slice(0, 12);
+const categories = item.json.categories?.slice(0, 12) ?? [];
+const paragraphs = sections.flatMap((section) =>
+  (section.paragraphs ?? []).map(paragraphText).filter(Boolean),
+);
+
+function hasReadableSection(section: WtfSection) {
+  return Boolean(section.title || section.paragraphs?.some((paragraph) => paragraphText(paragraph)));
+}
+
+function paragraphText(paragraph: WtfParagraph) {
+  return paragraph.sentences.map((sentence) => sentence.text).join("");
+}
+---
+
+<Card>
+  <CardHeader class="space-y-3">
+    <div class="flex flex-wrap items-center gap-2">
+      <CardTitle class="text-2xl">{item.title}</CardTitle>
+      <Badge>{item.lang}</Badge>
+    </div>
+    {
+      categories.length > 0 && (
+        <div class="flex flex-wrap gap-2">
+          {categories.map((category) => (
+            <Badge variant="outline">{category}</Badge>
+          ))}
+        </div>
+      )
+    }
+  </CardHeader>
+  <CardContent>
+    {
+      paragraphs.length > 0 ? (
+        <div class="space-y-4 leading-7 text-foreground/90">
+          {paragraphs.map((text) => (
+            <p>{text}</p>
+          ))}
+        </div>
+      ) : (
+        <p class="text-center text-muted-foreground">Wikipedia JSON did not include readable article content.</p>
+      )
+    }
+  </CardContent>
+</Card>

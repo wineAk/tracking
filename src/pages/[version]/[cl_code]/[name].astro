@@ -1,0 +1,53 @@
+---
+import WikipediaArticle from "@/components/WikipediaArticle.astro";
+import { linkList, type LinkListItemType } from "@/config/link-list";
+import wikipediaData from "@/data/wikipedia.json";
+import PageShell from "@/layouts/PageShell.astro";
+import { createMetaTitle } from "@/lib/createTitle";
+import type { FetchWikipedia } from "@/lib/wikipedia";
+
+type Props = {
+  link: LinkListItemType;
+  item: FetchWikipedia;
+};
+
+export function getStaticPaths() {
+  const links = linkList();
+  const allLinks = [...links.prod, ...links.test];
+  const wikipedia = wikipediaData.items as FetchWikipedia[];
+
+  return allLinks.flatMap((link) =>
+    wikipedia
+      .filter((item) => item.found)
+      .map((item) => ({
+        params: {
+          version: link.version,
+          cl_code: link.cl_code,
+          name: item.name,
+        },
+        props: {
+          link,
+          item,
+        },
+      })),
+  );
+}
+
+const { link, item } = Astro.props;
+const environment = link.type === "prod" ? "本番" : "テスト";
+const title = createMetaTitle({
+  subtitle: item.title,
+  title: `${link.version} - ${link.cl_code}`,
+});
+---
+
+<PageShell
+  title={title}
+  heading={`Web行動解析 ${link.version}`}
+  color={link.type}
+  badge={`${environment}環境`}
+  description={`${link.cl_code} : ${link.cl_company}`}
+>
+  <WikipediaArticle item={item} />
+  <script is:inline src={link.script} async defer></script>
+</PageShell>

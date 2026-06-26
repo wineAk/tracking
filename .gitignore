@@ -1,9 +1,13 @@
-.DS_Store
+**/.DS_Store
 /node_modules/
 
 # React Router
 /.react-router/
 /build/
+
+# Astro
+/.astro/
+/dist/
 
 # Snyk Security Extension - AI Rules (auto-generated)
 .cursor/rules/snyk_rules.mdc

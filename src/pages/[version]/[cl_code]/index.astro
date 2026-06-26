@@ -1,0 +1,72 @@
+---
+import Badge from "@/components/starwind/badge";
+import Button from "@/components/starwind/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/starwind/card";
+import { linkList, type LinkListItemType } from "@/config/link-list";
+import wikipediaData from "@/data/wikipedia.json";
+import PageShell from "@/layouts/PageShell.astro";
+import { createMetaTitle } from "@/lib/createTitle";
+import { siteHref } from "@/lib/url";
+import type { FetchWikipedia } from "@/lib/wikipedia";
+
+type Props = {
+  link: LinkListItemType;
+  wikipedia: FetchWikipedia[];
+};
+
+export function getStaticPaths() {
+  const links = linkList();
+  const allLinks = [...links.prod, ...links.test];
+  return allLinks.map((link) => ({
+    params: {
+      version: link.version,
+      cl_code: link.cl_code,
+    },
+    props: {
+      link,
+      wikipedia: wikipediaData.items as FetchWikipedia[],
+    },
+  }));
+}
+
+const { link, wikipedia } = Astro.props;
+const environment = link.type === "prod" ? "本番" : "テスト";
+---
+
+<PageShell
+  title={createMetaTitle({ title: `${link.version} - ${link.cl_code}` })}
+  heading={`Web行動解析 ${link.version}`}
+  color={link.type}
+  badge={`${environment}環境`}
+  description={`${link.cl_code} : ${link.cl_company}`}
+>
+  <section class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    {
+      wikipedia.map(({ name, title, summary, lang, found }) => {
+        const displayLang = lang === "ja" || lang === "en" ? lang : "--";
+        return (
+          <Card>
+            <CardHeader>
+              <CardTitle class="flex items-center gap-2">
+                <Badge>{displayLang}</Badge>
+                <span>{found ? title : title.replace("_", " ")}</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="break-all text-sm text-muted-foreground">{summary}</div>
+            </CardContent>
+            {found && (
+              <div class="ml-auto mt-auto flex items-center px-6 pb-6">
+                <Button href={siteHref(`/${link.version}/${link.cl_code}/${encodeURIComponent(name)}/`)}>
+                  <span>詳細</span>
+                  <span aria-hidden="true">-&gt;</span>
+                </Button>
+              </div>
+            )}
+          </Card>
+        );
+      })
+    }
+  </section>
+  <script is:inline src={link.script} async defer></script>
+</PageShell>

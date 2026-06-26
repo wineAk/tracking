@@ -1,0 +1,65 @@
+---
+import Badge from "@/components/starwind/badge";
+import Button from "@/components/starwind/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/starwind/card";
+import { Table, TableBody, TableCell, TableHead, TableRow } from "@/components/starwind/table";
+import { linkList, type LinkListItemType } from "@/config/link-list";
+import PageShell from "@/layouts/PageShell.astro";
+import { siteHref } from "@/lib/url";
+
+const links = linkList();
+const groups: Array<{ type: "prod" | "test"; title: string; items: LinkListItemType[] }> = [
+  { type: "prod", title: "本番", items: links.prod },
+  { type: "test", title: "テスト", items: links.test },
+];
+---
+
+<PageShell heading="HOME">
+  <section class="space-y-8">
+    {
+      groups.map((group) => (
+        <div class="space-y-4" data-color={group.type}>
+          <h2 class="text-2xl font-semibold tracking-normal">{group.title}</h2>
+          <section class="grid grid-cols-1 gap-4 md:grid-cols-2">
+            {group.items.map(({ version, cl_code, cl_company, description }) => (
+              <Card>
+                <CardHeader>
+                  <CardTitle class="flex items-center gap-2">
+                    <span>Web行動解析 {version}</span>
+                    <Badge variant={group.type === "prod" ? "success" : "error"}>
+                      {group.type === "prod" ? "本番" : "テスト"}
+                    </Badge>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Table>
+                    <TableBody>
+                      <TableRow>
+                        <TableHead>登録番号</TableHead>
+                        <TableCell>{cl_code}</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableHead>会社名</TableHead>
+                        <TableCell>{cl_company}</TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableHead>その他</TableHead>
+                        <TableCell>{description}</TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </CardContent>
+                <div class="ml-auto mt-auto flex items-center px-6 pb-6">
+                  <Button href={siteHref(`/${version}/${cl_code}/`)}>
+                    <span>切り替え</span>
+                    <span aria-hidden="true">-&gt;</span>
+                  </Button>
+                </div>
+              </Card>
+            ))}
+          </section>
+        </div>
+      ))
+    }
+  </section>
+</PageShell>

@@ -1,0 +1,69 @@
+---
+import {
+  Dropdown,
+  DropdownContent,
+  DropdownItem,
+  DropdownLabel,
+  DropdownTrigger,
+} from "@/components/starwind/dropdown";
+import Badge from "@/components/starwind/badge";
+import Button from "@/components/starwind/button";
+import Separator from "@/components/starwind/separator";
+import ThemeToggle from "@/components/starwind/theme-toggle";
+import { linkList, type LinkListItemType } from "@/config/link-list";
+import { siteHref } from "@/lib/url";
+import logoDark from "@/images/logo-dark.svg";
+import logoLight from "@/images/logo-light.svg";
+
+const links = linkList();
+const groups: Array<{ type: "prod" | "test"; title: string; items: LinkListItemType[] }> = [
+  { type: "prod", title: "本番", items: links.prod },
+  { type: "test", title: "テスト", items: links.test },
+];
+---
+
+<header class="fixed z-10 h-16 min-w-xs w-full border-b bg-background/70 p-4 backdrop-blur-sm">
+  <nav class="mx-auto flex h-full max-w-screen-lg items-center justify-between gap-4">
+    <a href={siteHref("/")} class="flex h-full items-center">
+      <img src={logoLight.src} alt="Tracking" class="block h-full w-auto dark:hidden" />
+      <img src={logoDark.src} alt="Tracking" class="hidden h-full w-auto dark:block" />
+    </a>
+    <div class="flex items-center gap-2">
+      <Dropdown>
+        <DropdownTrigger asChild>
+          <Button variant="outline" size="sm">切り替え</Button>
+        </DropdownTrigger>
+        <DropdownContent align="end" class="!w-96 max-w-[calc(100vw-2rem)] space-y-2">
+          {
+            groups.map((group) => (
+              <div data-color={group.type}>
+                <DropdownLabel>{group.title}</DropdownLabel>
+                {group.items.map(({ version, cl_code, cl_company }) => (
+                  <DropdownItem
+                    as="a"
+                    href={siteHref(`/${version}/${cl_code}/`)}
+                    class="flex-col items-start gap-1"
+                  >
+                    <div class="flex items-center gap-2 font-medium">
+                      <Badge class="h-2.5 w-2.5 rounded-full p-0" aria-hidden="true" />
+                      <span>Web行動解析 {version}</span>
+                    </div>
+                    <div class="break-words text-muted-foreground">
+                      {cl_code}: {cl_company}
+                    </div>
+                  </DropdownItem>
+                ))}
+              </div>
+            ))
+          }
+          <Separator />
+          <div class="px-2 pb-2 text-xs text-muted-foreground">
+            <p>テスト環境は test-new.saaske.com から可能</p>
+            <p>ブランチの切り替え・クーロン設定が必要</p>
+          </div>
+        </DropdownContent>
+      </Dropdown>
+      <ThemeToggle size="sm" />
+    </div>
+  </nav>
+</header>
