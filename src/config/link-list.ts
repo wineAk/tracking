@@ -50,6 +50,14 @@ export function linkList(): LinkListType {
         cl_company: "デモシステム株式会社",
         description: "",
       },
+      {
+        type: "test",
+        version: "v2",
+        script: `/${repositoryName}/c03005618/tracking.js?v=2.0.0`,
+        cl_code: "c03005618",
+        cl_company: "SAASKE-4190_2",
+        description: "",
+      },
     ],
   };
 }
