@@ -13,13 +13,16 @@ export default function wikipediaList() {
     "Google_Fonts",
     "Radix_UI",
     "Lucide",
+    "Astro_(Webフレームワーク)",
+    "Varnish_(ソフトウェア)",
+    "Fastly",
     // ツール
     "Npm_(パッケージ管理ツール)",
     "Git",
     "GitHub",
     "GitHub_Pages",
     "Visual_Studio_Code",
-    "Cursor_(code_editor)",
+    "Cursor_(エディター)",
     "ChatGPT",
   ].sort((a, b) => a.localeCompare(b));
 };

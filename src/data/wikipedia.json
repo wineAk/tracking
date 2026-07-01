@@ -1,6 +1,455 @@
 {
-  "generatedAt": "2026-06-26T07:21:12.004Z",
+  "generatedAt": "2026-07-01T04:28:13.896Z",
   "items": [
+    {
+      "found": true,
+      "title": "Astro (Webフレームワーク)",
+      "text": "Astro（アストロ）はWebサイトを制作するためのJavaScript／TypeScriptベースのフレームワークである. 独自の「アイランド・アーキテクチャ（Islands Architecture）」を採用し、ユーザーに不要なJavaScriptの処理を最小限に抑え、初期表示性能の向上を謳っている. また、ReactやVueなど様々なUIフレームワークを併用可能な設計となっており、開発者は既存のコンポーネントを活用しつつ、サイトを構築できる点も特徴である.\n\nAstroはFred SchottやNate Mooreらによって2021年ごろから開発を開始した. SnowpackとSkypackの開発チームを中心に、コミュニティからの貢献も行われ、2022年4月にベータ版がリリースされた.\n\n以降も大規模なアップデートが継続的に行われており、もAstro v5をベースに開発が続けられている.\n\n\n\n\n\nAstroはページ全体を静的なHTMLにレンダリングし、不要なJavaScriptを削除することで高速なパフォーマンスを実現する. 自動補完検索バーなどでインタラクティブな要素が必要な場合のみ、該当するコンポーネントを「アイランド・アーキテクチャ（Islands Architecture）」の方式で、Astroは該当コンポーネント（および依存関係）のみを読み込む. さらにコンポーネントがページ上で表示されるまで読み込みを遅延させることもできる.\n\nまた、AstroではImageコンポーネントを使用することで、画像の幅・高さをHTMLに反映し、読み込み時のレイアウトずれ（CLS）を防ぐ仕組みが組み込まれている. さらに、ローカルおよび許可されたリモート画像に対しては、フォーマット変換が可能である.\n\nAstroはTypeScript、CSS Modules、Sass、Tailwind CSSなどの主要技術をサポートしている. また、React、Vue、Svelte、SolidJS、Preactなど複数のフレームワークを同一プロジェクト内で併用できる. RSSフィードやサイトマップの自動生成なども容易に実装できる.\n\nAstroは静的サイト生成（SSG）に加え、サーバーサイドレンダリング（SSR）やエッジレンダリングにも対応しており、静的サイトから動的Webアプリケーションまで幅広い構成をサポートしている.\n\nさらに、MarkdownおよびMDXにネイティブ対応しており、主にブログ、企業サイト、マーケティングページ、ドキュメントサイトなど、コンテンツ配信を中心とするウェブサイト構築に適している.\n\n\n\n",
+      "summary": "Astro（アストロ）はWebサイトを制作するためのJavaScript／TypeScriptベースのフレームワークである. 独自の「アイランド・アーキテクチャ（Islands Architecture）」を採用し、ユーザーに不要なJavaScriptの処理を最小限に抑え、初期表...",
+      "json": {
+        "title": "Astro",
+        "categories": [
+          "ソフトウェアフレームワーク"
+        ],
+        "sections": [
+          {
+            "title": "",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Astro（アストロ）はWebサイトを制作するためのJavaScript／TypeScriptベースのフレームワークである.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "JavaScript"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "TypeScript"
+                      },
+                      {
+                        "text": "フレームワーク",
+                        "type": "internal",
+                        "page": "ソフトウェアフレームワーク"
+                      }
+                    ],
+                    "formatting": {
+                      "bold": [
+                        "Astro"
+                      ]
+                    }
+                  },
+                  {
+                    "text": "独自の「アイランド・アーキテクチャ（Islands Architecture）」を採用し、ユーザーに不要なJavaScriptの処理を最小限に抑え、初期表示性能の向上を謳っている."
+                  },
+                  {
+                    "text": "また、ReactやVueなど様々なUIフレームワークを併用可能な設計となっており、開発者は既存のコンポーネントを活用しつつ、サイトを構築できる点も特徴である.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "React"
+                      },
+                      {
+                        "text": "Vue",
+                        "type": "internal",
+                        "page": "Vue.js"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "date": "2025年10月",
+                "template": "一次資料"
+              }
+            ],
+            "infoboxes": [
+              {
+                "名称": {
+                  "text": "Astro"
+                },
+                "ロゴ": {
+                  "text": "Astro.svg"
+                },
+                "開発元": {
+                  "text": "Astro Technology Company"
+                },
+                "初版": {
+                  "text": "2022年6月8日（v1.0.0）"
+                },
+                "最新版": {
+                  "text": "2025年12月16日（v5.16.6）"
+                },
+                "リポジトリ": {
+                  "text": "github.com/withastro/astro",
+                  "links": [
+                    {
+                      "text": "github.com/withastro/astro",
+                      "type": "external",
+                      "site": "https://github.com/withastro/astro"
+                    }
+                  ]
+                },
+                "ライセンス": {
+                  "text": "MITライセンス",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "MITライセンス"
+                    }
+                  ]
+                },
+                "公式サイト": {
+                  "text": "astro.build",
+                  "links": [
+                    {
+                      "text": "astro.build",
+                      "type": "external",
+                      "site": "https://astro.build"
+                    }
+                  ]
+                }
+              }
+            ],
+            "references": [
+              {
+                "title": "Astroを選ぶ理由 {{!}} Docs",
+                "language": "ja",
+                "website": "Astro公式",
+                "url": "https://docs.astro.build/ja/concepts/why-astro/",
+                "access-date": "2025-10-21",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "歴史",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "AstroはFred SchottやNate Mooreらによって2021年ごろから開発を開始した."
+                  },
+                  {
+                    "text": "SnowpackとSkypackの開発チームを中心に、コミュニティからの貢献も行われ、2022年4月にベータ版がリリースされた."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "以降も大規模なアップデートが継続的に行われており、もAstro v5をベースに開発が続けられている."
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "date": "2025年10月",
+                "list": [
+                  "現在"
+                ],
+                "template": "いつ範囲"
+              }
+            ],
+            "references": [
+              {
+                "title": "Introducing Astro {{!}} Astro公式ブログ",
+                "language": "en",
+                "url": "https://astro.build/blog/introducing-astro/",
+                "access-date": "2025-10-21",
+                "website": "Astro公式",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "バージョン",
+            "depth": 1,
+            "tables": [
+              [
+                {
+                  "バージョン": {
+                    "text": "Astro 5.0"
+                  },
+                  "リリース日": {
+                    "text": "2024年12月3日"
+                  },
+                  "公式ブログ記事": {
+                    "text": "Astro 5.0"
+                  }
+                },
+                {
+                  "バージョン": {
+                    "text": "Astro 4.0"
+                  },
+                  "リリース日": {
+                    "text": "2023年12月5日"
+                  },
+                  "公式ブログ記事": {
+                    "text": "Astro 4.0"
+                  }
+                },
+                {
+                  "バージョン": {
+                    "text": "Astro 3.0"
+                  },
+                  "リリース日": {
+                    "text": "2023年8月30日"
+                  },
+                  "公式ブログ記事": {
+                    "text": "Astro 3.0"
+                  }
+                },
+                {
+                  "バージョン": {
+                    "text": "Astro 2.0"
+                  },
+                  "リリース日": {
+                    "text": "2023年1月24日"
+                  },
+                  "公式ブログ記事": {
+                    "text": "Astro 2.0"
+                  }
+                },
+                {
+                  "バージョン": {
+                    "text": "Astro 1.0"
+                  },
+                  "リリース日": {
+                    "text": "2022年8月9日"
+                  },
+                  "公式ブログ記事": {
+                    "text": "Astro 1.0"
+                  }
+                }
+              ]
+            ],
+            "templates": [
+              {
+                "list": [
+                  "Astro 5.0"
+                ],
+                "template": "efn2"
+              },
+              {
+                "list": [
+                  "Astro 4.0"
+                ],
+                "template": "efn2"
+              },
+              {
+                "list": [
+                  "Astro 3.0"
+                ],
+                "template": "efn2"
+              },
+              {
+                "list": [
+                  "Astro 2.0"
+                ],
+                "template": "efn2"
+              },
+              {
+                "list": [
+                  "Astro 1.0"
+                ],
+                "template": "efn2"
+              }
+            ]
+          },
+          {
+            "title": "特徴",
+            "depth": 0
+          },
+          {
+            "title": "パフォーマンス",
+            "depth": 1,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Astroはページ全体を静的なHTMLにレンダリングし、不要なJavaScriptを削除することで高速なパフォーマンスを実現する.",
+                    "links": [
+                      {
+                        "text": "HTML",
+                        "type": "internal",
+                        "page": "HyperText Markup Language"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "自動補完検索バーなどでインタラクティブな要素が必要な場合のみ、該当するコンポーネントを「アイランド・アーキテクチャ（Islands Architecture）」の方式で、Astroは該当コンポーネント（および依存関係）のみを読み込む."
+                  },
+                  {
+                    "text": "さらにコンポーネントがページ上で表示されるまで読み込みを遅延させることもできる."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "また、AstroではImageコンポーネントを使用することで、画像の幅・高さをHTMLに反映し、読み込み時のレイアウトずれ（CLS）を防ぐ仕組みが組み込まれている."
+                  },
+                  {
+                    "text": "さらに、ローカルおよび許可されたリモート画像に対しては、フォーマット変換が可能である."
+                  }
+                ]
+              }
+            ],
+            "references": [
+              {
+                "title": "画像 {{!}} Docs",
+                "language": "ja",
+                "website": "Astro公式",
+                "url": "https://docs.astro.build/ja/guides/images/",
+                "access-date": "2025-10-21",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "開発",
+            "depth": 1,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "AstroはTypeScript、CSS Modules、Sass、Tailwind CSSなどの主要技術をサポートしている.",
+                    "links": [
+                      {
+                        "text": "CSS",
+                        "type": "internal",
+                        "page": "Cascading Style Sheets"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Sass"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Tailwind CSS"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "また、React、Vue、Svelte、SolidJS、Preactなど複数のフレームワークを同一プロジェクト内で併用できる.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Svelte"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "SolidJS"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "RSSフィードやサイトマップの自動生成なども容易に実装できる.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "RSS"
+                      },
+                      {
+                        "text": "フィード",
+                        "type": "internal",
+                        "page": "フィード"
+                      },
+                      {
+                        "text": "サイトマップ",
+                        "type": "internal",
+                        "page": "サイトマップ"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "Astroは静的サイト生成（SSG）に加え、サーバーサイドレンダリング（SSR）やエッジレンダリングにも対応しており、静的サイトから動的Webアプリケーションまで幅広い構成をサポートしている.",
+                    "links": [
+                      {
+                        "text": "静的サイト生成",
+                        "type": "internal",
+                        "page": "静的サイトジェネレーター"
+                      },
+                      {
+                        "text": "サーバーサイドレンダリング",
+                        "type": "internal",
+                        "page": "サーバサイドスクリプト"
+                      },
+                      {
+                        "text": "Webアプリケーション",
+                        "type": "internal",
+                        "page": "ウェブアプリケーション"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "さらに、MarkdownおよびMDXにネイティブ対応しており、主にブログ、企業サイト、マーケティングページ、ドキュメントサイトなど、コンテンツ配信を中心とするウェブサイト構築に適している.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Markdown"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "references": [
+              {
+                "title": "AstroサイトをNetlifyにデプロイする",
+                "language": "ja",
+                "publisher": "Astro公式",
+                "url": "https://docs.astro.build/ja/guides/deploy/netlify/",
+                "access-date": "2025-10-21",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "注釈",
+            "depth": 0,
+            "templates": [
+              {
+                "template": "notelist2"
+              }
+            ]
+          },
+          {
+            "title": "出典",
+            "depth": 1,
+            "templates": [
+              {
+                "template": "reflist"
+              },
+              {
+                "template": "javascript"
+              }
+            ]
+          }
+        ]
+      },
+      "name": "Astro_(Webフレームワーク)",
+      "lang": "ja"
+    },
     {
       "found": true,
       "title": "ChatGPT",
@@ -1192,7 +1641,7 @@
                 "volume": "29",
                 "issue": "9",
                 "pages": "e48002.",
-                "doi": "10.2196/48002.",
+                "doi": "10.2196/48002",
                 "pmc": "10365615",
                 "pmid": "37384388",
                 "vauthors": "Soshi Takagi, Takashi Watari, Ayano Erabi, Kota Sakaguchi",
@@ -6496,13 +6945,1147 @@
       "lang": "ja"
     },
     {
-      "found": false,
-      "title": "Cursor_(code_editor)",
-      "text": "",
-      "summary": "",
-      "json": {},
-      "name": "Cursor_(code_editor)",
-      "lang": "-"
+      "found": true,
+      "title": "Cursor (エディター)",
+      "text": "Cursor（カーソル）は、Windows、macOS、Linux向けの、AI支援型統合開発環境である. 追加のAI機能を備えたVisual Studio Codeのフォークである. Cursorはプロプライエタリ・ソフトウェアであり、2022年に設立されたサンフランシスコを拠点とするスタートアップ企業であるAnysphereによって開発されている.\n\nCursorは大規模言語モデルを使用し、オートコンプリート機能とチャットによるクエリ機能を使ってテキストを操作する. これはVisual Studio Codeのフォークである. いくつかのメディアは、Cursorをvibe codingアプリとして表現している.\n\nCursorを使うと、開発者は自然言語の指示からコードを生成できる. ユーザーはプロンプトを提供することで、コードの一部を生成したり更新したりすることが可能である. また、コードベースをインデックス化し、自然言語でクエリを実行することもできる. エディタは「スマートリライト（smart rewrite）」機能を提供しており、ユーザーは複数行のコードを同時に変更できる.\n\n2025年4月、Cursorは複数のデバイスでソフトウェアを同時に使用できないようにするバグを経験した. AIが生成した応答を使用したCursorのカスタマーサポートのメールは、セキュリティ上の理由から単一のサブスクリプションライセンスを複数のデバイスで使用することを禁止するポリシーを誤って引用し、デバイスごとに個別のサブスクリプションを購入する必要があると誤って述べた. Redditでの新しい「ポリシー」に対する批判の最中、Anysphereの広報担当者はそのようなポリシーは存在せず、「最前線のAIサポートボット」からの誤った応答であったと明らかにする撤回声明を発表した.\n\n\n * GitHub Copilot\n\n\n\n\n",
+      "summary": "Cursor（カーソル）は、Windows、macOS、Linux向けの、AI支援型統合開発環境である. 追加のAI機能を備えたVisual Studio Codeのフォークである. Cursorはプロプライエタリ・ソフトウェアであり、2022年に設立されたサンフランシスコを拠点...",
+      "json": {
+        "title": "Cursor",
+        "categories": [
+          "テキストエディタ"
+        ],
+        "sections": [
+          {
+            "title": "",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Cursor（カーソル）は、Windows、macOS、Linux向けの、AI支援型統合開発環境である.",
+                    "links": [
+                      {
+                        "text": "Windows",
+                        "type": "internal",
+                        "page": "Microsoft Windows"
+                      },
+                      {
+                        "text": "macOS",
+                        "type": "internal",
+                        "page": "macOS"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Linux"
+                      },
+                      {
+                        "text": "統合開発環境",
+                        "type": "internal",
+                        "page": "統合開発環境"
+                      }
+                    ],
+                    "formatting": {
+                      "bold": [
+                        "Cursor"
+                      ]
+                    }
+                  },
+                  {
+                    "text": "追加のAI機能を備えたVisual Studio Codeのフォークである.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Visual Studio Code"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Cursorはプロプライエタリ・ソフトウェアであり、2022年に設立されたサンフランシスコを拠点とするスタートアップ企業であるAnysphereによって開発されている.",
+                    "links": [
+                      {
+                        "text": "プロプライエタリ・ソフトウェア",
+                        "type": "internal",
+                        "page": "プロプライエタリ・ソフトウェア"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "references": [
+              {
+                "last": "Aubry",
+                "first": "François",
+                "title": "Cursor AI: A Guide With 10 Practical Examples",
+                "url": "https://www.datacamp.com/tutorial/cursor-ai-code-editor",
+                "website": "DataCamp",
+                "language": "en",
+                "date": "2024-09-02",
+                "archive-date": "2024-12-17",
+                "archive-url": "https://web.archive.org/web/20241217070248/https://www.datacamp.com/tutorial/cursor-ai-code-editor",
+                "url-status": "live",
+                "accessdate": "2026-03-17",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "サービス",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Cursorは大規模言語モデルを使用し、オートコンプリート機能とチャットによるクエリ機能を使ってテキストを操作する.",
+                    "links": [
+                      {
+                        "text": "大規模言語モデル",
+                        "type": "internal",
+                        "page": "大規模言語モデル"
+                      },
+                      {
+                        "text": "オートコンプリート",
+                        "type": "internal",
+                        "page": "オートコンプリート"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "これはVisual Studio Codeのフォークである.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Visual Studio Code"
+                      },
+                      {
+                        "text": "フォーク",
+                        "type": "internal",
+                        "page": "フォーク (ソフトウェア開発)"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "いくつかのメディアは、Cursorをvibe codingアプリとして表現している.",
+                    "links": [
+                      {
+                        "text": "vibe coding",
+                        "type": "internal",
+                        "page": "バイブコーディング"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "Cursorを使うと、開発者は自然言語の指示からコードを生成できる."
+                  },
+                  {
+                    "text": "ユーザーはプロンプトを提供することで、コードの一部を生成したり更新したりすることが可能である."
+                  },
+                  {
+                    "text": "また、コードベースをインデックス化し、自然言語でクエリを実行することもできる."
+                  },
+                  {
+                    "text": "エディタは「スマートリライト（smart rewrite）」機能を提供しており、ユーザーは複数行のコードを同時に変更できる."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2025年4月、Cursorは複数のデバイスでソフトウェアを同時に使用できないようにするバグを経験した."
+                  },
+                  {
+                    "text": "AIが生成した応答を使用したCursorのカスタマーサポートのメールは、セキュリティ上の理由から単一のサブスクリプションライセンスを複数のデバイスで使用することを禁止するポリシーを誤って引用し、デバイスごとに個別のサブスクリプションを購入する必要があると誤って述べた.",
+                    "links": [
+                      {
+                        "text": "誤って引用し",
+                        "type": "internal",
+                        "page": "ハルシネーション (人工知能)"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Redditでの新しい「ポリシー」に対する批判の最中、Anysphereの広報担当者はそのようなポリシーは存在せず、「最前線のAIサポートボット」からの誤った応答であったと明らかにする撤回声明を発表した.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Reddit"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "references": [
+              {
+                "title": "Maker of AI 'vibe coding' app Cursor hits $9bn valuation",
+                "newspaper": "Financial Times",
+                "date": "2025-05",
+                "last1": "Bradshaw",
+                "first1": "Tim",
+                "url": "https://www.ft.com/content/a7b34d53-a844-4e69-a55c-b9dee9a97dd2",
+                "accessdate": "2026-03-17",
+                "template": "citation",
+                "type": "news"
+              },
+              {
+                "last1": "Goode",
+                "first1": "Lauren",
+                "date": "2025-07-24",
+                "title": "Cursor's New Bugbot Is Designed to Save Vibe Coders From Themselves",
+                "url": "https://www.wired.com/story/cursor-releases-new-ai-tool-for-debugging-code/",
+                "journal": "WIRED",
+                "publisher": "Condé Nast",
+                "accessdate": "2026-03-17",
+                "template": "citation",
+                "type": "journal"
+              },
+              {
+                "title": "Anysphere launches a $200-a-month Cursor AI coding subscription",
+                "newspaper": "TechCrunch",
+                "date": "2025-06-17",
+                "last1": "Zeff",
+                "first1": "Maxwell",
+                "url": "https://techcrunch.com/2025/06/17/anysphere-launches-a-200-a-month-cursor-ai-coding-subscription/",
+                "accessdate": "2026-03-17",
+                "template": "citation",
+                "type": "news"
+              },
+              {
+                "title": "OpenAI looked at buying Cursor creator before turning to AI coding rival Windsurf",
+                "newspaper": "CNBC",
+                "date": "2025-04-17",
+                "last1": "Novet",
+                "first1": "Jordan",
+                "url": "https://www.cnbc.com/2025/04/17/openai-looked-at-cursor-before-considering-deal-with-rival-windsurf.html",
+                "accessdate": "2026-03-17",
+                "language": "en",
+                "template": "citation",
+                "type": "news"
+              },
+              {
+                "title": "Cursor Codebase Understanding",
+                "url": "https://www.cursor.com/",
+                "website": "Cursor",
+                "accessdate": "2026-03-17",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Cursor Smart Rewrites",
+                "url": "https://www.cursor.com/",
+                "website": "Cursor",
+                "accessdate": "2026-03-17",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Edwards",
+                "first": "Benj",
+                "title": "Company apologizes after AI support agent invents policy that causes user uproar",
+                "url": "https://arstechnica.com/ai/2025/04/cursor-ai-support-bot-invents-fake-policy-and-triggers-user-uproar/",
+                "website": "Ars Technica",
+                "language": "en",
+                "date": "2025-04-17",
+                "archive-date": "2025-04-21",
+                "archive-url": "https://web.archive.org/web/20250421202614/https://arstechnica.com/ai/2025/04/cursor-ai-support-bot-invents-fake-policy-and-triggers-user-uproar/",
+                "url-status": "live",
+                "accessdate": "2026-03-17",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "関連項目",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": []
+              }
+            ],
+            "lists": [
+              [
+                {
+                  "text": "GitHub Copilot",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "GitHub Copilot"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "title": "脚注",
+            "depth": 0,
+            "templates": [
+              {
+                "template": "脚注ヘルプ"
+              },
+              {
+                "template": "reflist"
+              }
+            ]
+          },
+          {
+            "title": "外部リンク",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": []
+              }
+            ],
+            "templates": [
+              {
+                "list": [
+                  "https://www.cursor.com/"
+                ],
+                "template": "official website"
+              },
+              {
+                "template": "生成ai"
+              }
+            ],
+            "lists": [
+              []
+            ]
+          }
+        ]
+      },
+      "name": "Cursor_(エディター)",
+      "lang": "ja"
+    },
+    {
+      "found": true,
+      "title": "Fastly",
+      "text": "Fastly（ファストリー）は、アメリカ合衆国のクラウドコンピューティングサービスプロバイダである. Fastlyは自身のネットワークについて、開発者がコアクラウドインフラストラクチャをネットワークのエッジ、つまりユーザにより近い場所まで拡張することを助けるために設計されたエッジクラウドプラットフォームであると説明している. Fastly edge cloud platformには、コンテンツデリバリーネットワーク、画像の最適化、ビデオとストリーミング、クラウドセキュリティ、負荷分散などのサービスがある. Fastlyクラウドセキュリティのサービスには、DoS攻撃からの保護、ボットへの対処、Webアプリケーションファイアウォールなどがある. Fastly web application firewallは、OWASP ModSecurity Core Rule Setと独自のルールセットを利用している.\n\nFastlyのプラットフォームは、Varnish上に構築されている.\n\nFastlyは2011年3月にWikiaの元CTOのArthur Bergmanによって設立された. 2013年6月にシリーズBの資金調達で1000万ドルを調達した. 2014年4月、FastlyはHerokuのCDNアドオンであるCDN Sumoを買収したと発表した. 2014年9月にはシリーズCの資金調達でさらに4000万ドルを調達し 、続いて2015年8月に7500万ドルのシリーズDラウンドの資金調達を行った.\n\n2015年9月、Googleはユーザーにサービスの提供を行うために、Fastlyや他のCDNプロバイダーとパートナーシップを結んだ. 2017年4月、Fastlyはエッジクラウドプラットフォームの立ち上げを発表し、同時に画像の最適化、負荷分散、Webアプリケーションファイアウォールの提供を発表した.\n\nまた、2017年4月に5000万ドル 、2018年8月に4000万ドルの資金調達 を受けている. 2019年4月に新規株式公開（IPO）を行い、同年5月17日にNYSEに上場した. 2020年8月には、サイバーセキュリティ企業のSignal Science社を7億7500万ドルで買収することを発表した.\n\nFastlyのCDNサービスは、サイト固有のファイルを保存する'cdn.mydomain.com'のようなアドレスを提供する代わりに、すべてのウェブサイトトラフィックをFastlyのサーバ経由でルーティングするリバースプロキシモデルに従っている. その後、世界中の約60箇所のうち、リクエストユーザの位置に一番近いPoint of presenceからコンテンツを取得する. 月額50USドルの最低料金が適用される従量課金制サービスとして価格設定されており、帯域幅は地域に応じた料金で課金される. コンテンツはFastlyのサービスに直接アップロードされるのではなく、エンドユーザがコンテンツにアクセスするのに必要な時間を削減するために、オリジンサーバやキャッシュサーバから定期的にプルされる仕組みになっている.\n\nFastlyはHTTP/3プロトコルベースのUDP、DRM有効化コンテンツ、メディアアクセスを制限するための暗号化とセキュアトークンなどをサポートしている.\n\n\n\n2021年6月8日18時50分頃にCDNに障害が発生したことを、Fastlyは報告した. これにより、Reddit、gov.uk、Twitch、Spotify、Amazonなどの多数の主要なウェブサイトや、主要なニュースサイトのニューヨーク・タイムズ、ガーディアン、CNN、BBCが利用できなくなった. その他にも、日本経済新聞社、読売新聞社、メルカリ、フィナンシャル・タイムズ（FT）、日本の政府系サイト、楽天グループのウェブサイトなどのサイトも一時的に閲覧できなくなった. パーセル・ヒーローの消費者調査部門の責任者、デビッド・ジンクスは、世界中の小売業に与えた損失を約1500億円であると試算している. 影響を受けた技術系ニュースサイトのThe Vergeは、Googleドキュメントを利用して進行中の障害について報告するという対処を行った. この障害は、主要なウェブサイトの特定の機能にも影響を与え、たとえば、Twitterが使用している絵文字のホスティングサーバへの影響により絵文字が使えなくなった. Fastlyは停止の原因を特定のユーザの設定によって引き起こされたソフトウェアのバグであると説明している.\n\n\n\n\n",
+      "summary": "Fastly（ファストリー）は、アメリカ合衆国のクラウドコンピューティングサービスプロバイダである. Fastlyは自身のネットワークについて、開発者がコアクラウドインフラストラクチャをネットワークのエッジ、つまりユーザにより近い場所まで拡張することを助けるために設計されたエッジ...",
+      "json": {
+        "title": "Fastly",
+        "categories": [
+          "2011年設立の企業",
+          "カリフォルニア州の企業",
+          "クラウドコンピューティング",
+          "コンテンツデリバリネットワーク"
+        ],
+        "sections": [
+          {
+            "title": "",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Fastly（ファストリー）は、アメリカ合衆国のクラウドコンピューティングサービスプロバイダである.",
+                    "links": [
+                      {
+                        "text": "アメリカ合衆国",
+                        "type": "internal",
+                        "page": "アメリカ合衆国"
+                      }
+                    ],
+                    "formatting": {
+                      "bold": [
+                        "Fastly"
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Fastlyは自身のネットワークについて、開発者がコアクラウドインフラストラクチャをネットワークのエッジ、つまりユーザにより近い場所まで拡張することを助けるために設計されたエッジクラウドプラットフォームであると説明している."
+                  },
+                  {
+                    "text": "Fastly edge cloud platformには、コンテンツデリバリーネットワーク、画像の最適化、ビデオとストリーミング、クラウドセキュリティ、負荷分散などのサービスがある.",
+                    "links": [
+                      {
+                        "text": "コンテンツデリバリーネットワーク",
+                        "type": "internal",
+                        "page": "コンテンツデリバリネットワーク"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Fastlyクラウドセキュリティのサービスには、DoS攻撃からの保護、ボットへの対処、Webアプリケーションファイアウォールなどがある.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "DoS攻撃"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Fastly web application firewallは、OWASP ModSecurity Core Rule Setと独自のルールセットを利用している."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "Fastlyのプラットフォームは、Varnish上に構築されている.",
+                    "links": [
+                      {
+                        "text": "Varnish",
+                        "type": "internal",
+                        "page": "Varnish (ソフトウェア)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "template": "date",
+                "data": {
+                  "year": "2011",
+                  "month": "03",
+                  "template": "start date and age",
+                  "text": "March 2011"
+                }
+              },
+              {
+                "ticketnumber": "FSLY",
+                "template": "nyse"
+              },
+              {
+                "text": "Russell 1000",
+                "lan1": "en",
+                "text1": "Russell 1000",
+                "template": "ill"
+              },
+              {
+                "list": [
+                  "nyse: FSLY（Class A）",
+                  "Russell 1000 component"
+                ],
+                "template": "ubl"
+              },
+              {
+                "text": "Security as a service",
+                "lan1": "en",
+                "text1": "Security as a service",
+                "template": "ill"
+              },
+              {
+                "template": "official url"
+              },
+              {
+                "template": "increase"
+              },
+              {
+                "text": "OWASP",
+                "lan1": "en",
+                "text1": "OWASP",
+                "label": "Open Web Application Security Project",
+                "template": "ill"
+              },
+              {
+                "text": "ModSecurity",
+                "lan1": "en",
+                "text1": "ModSecurity",
+                "template": "ill"
+              }
+            ],
+            "infoboxes": [
+              {
+                "name": {
+                  "text": "Fastly, Inc."
+                },
+                "logo": {
+                  "text": "Fastly logo.svg"
+                },
+                "founded": {
+                  "text": "March 2011"
+                },
+                "company_type": {
+                  "text": "公開会社",
+                  "links": [
+                    {
+                      "text": "公開会社",
+                      "type": "internal",
+                      "page": "公開会社"
+                    }
+                  ]
+                },
+                "traded_as": {
+                  "text": "nyse: FSLY（Class A）\n\nRussell 1000 component"
+                },
+                "founder": {
+                  "text": "Artur Bergman"
+                },
+                "location_city": {
+                  "text": "🇺🇸カリフォルニア州サンフランシスコ",
+                  "links": [
+                    {
+                      "text": "カリフォルニア州",
+                      "type": "internal",
+                      "page": "カリフォルニア州"
+                    },
+                    {
+                      "text": "サンフランシスコ",
+                      "type": "internal",
+                      "page": "サンフランシスコ"
+                    }
+                  ]
+                },
+                "key_people": {
+                  "text": "Joshua Bixby（CEO）",
+                  "links": [
+                    {
+                      "text": "CEO",
+                      "type": "internal",
+                      "page": "Chief executive officer"
+                    }
+                  ]
+                },
+                "industry": {
+                  "text": "インターネット",
+                  "links": [
+                    {
+                      "text": "インターネット",
+                      "type": "internal",
+                      "page": "インターネット"
+                    }
+                  ]
+                },
+                "services": {
+                  "text": "Content delivery network\n\nSecurity as a service\n\nウェブサイトパフォーマンス",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Content delivery network"
+                    }
+                  ]
+                },
+                "revenue": {
+                  "text": "2億ドル"
+                },
+                "num_employees": {
+                  "text": "1,000",
+                  "number": 1000
+                }
+              }
+            ],
+            "references": [
+              {
+                "title": "Fastly Revenue 2018-2021 - FSLY",
+                "website": "macrotrends",
+                "access-date": "25 May 2021",
+                "url": "https://www.macrotrends.net/stocks/charts/FSLY/fastly/revenue",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "The benefits of using Varnish",
+                "url": "https://www.fastly.com/blog/benefits-using-varnish",
+                "access-date": "December 23, 2020",
+                "website": "Fastly.com",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "date": "April 18, 2017",
+                "title": "How The New York Times Handled Unprecedented Election-Night Traffic Spike",
+                "url": "http://www.datacenterknowledge.com/archives/2017/04/18/how-new-york-times-handled-unprecedented-election-night-traffic-spike",
+                "work": "DataCenter Knowledge",
+                "accessdate": "2021-06-13",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Kepes",
+                "first": "Ben",
+                "title": "In the need for speed, Fastly goes all the way to the edge",
+                "website": "Computerworld",
+                "date": "April 18, 2017",
+                "url": "https://www.computerworld.com/article/3189666/internet/in-the-need-for-speed-fastly-goes-all-the-way-to-the-edge.html",
+                "access-date": "October 10, 2017",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Discontent and disruption in the world of content delivery networks",
+                "url": "https://techcrunch.com/2017/06/01/discontent-and-disruption-in-the-world-of-content-delivery-networks/",
+                "work": "TechCrunch",
+                "accessdate": "2021-06-13",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "歴史",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Fastlyは2011年3月にWikiaの元CTOのArthur Bergmanによって設立された.",
+                    "links": [
+                      {
+                        "text": "2011年",
+                        "type": "internal",
+                        "page": "2011年"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Wikia"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "2013年6月にシリーズBの資金調達で1000万ドルを調達した."
+                  },
+                  {
+                    "text": "2014年4月、FastlyはHerokuのCDNアドオンであるCDN Sumoを買収したと発表した.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Heroku"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "2014年9月にはシリーズCの資金調達でさらに4000万ドルを調達し 、続いて2015年8月に7500万ドルのシリーズDラウンドの資金調達を行った."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2015年9月、Googleはユーザーにサービスの提供を行うために、Fastlyや他のCDNプロバイダーとパートナーシップを結んだ.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Google"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "2017年4月、Fastlyはエッジクラウドプラットフォームの立ち上げを発表し、同時に画像の最適化、負荷分散、Webアプリケーションファイアウォールの提供を発表した."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "また、2017年4月に5000万ドル 、2018年8月に4000万ドルの資金調達 を受けている."
+                  },
+                  {
+                    "text": "2019年4月に新規株式公開（IPO）を行い、同年5月17日にNYSEに上場した.",
+                    "links": [
+                      {
+                        "text": "新規株式公開",
+                        "type": "internal",
+                        "page": "新規株式公開"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "NYSE"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "2020年8月には、サイバーセキュリティ企業のSignal Science社を7億7500万ドルで買収することを発表した.",
+                    "links": [
+                      {
+                        "text": "2020年",
+                        "type": "internal",
+                        "page": "2020年"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "text": "Webアプリケーションファイアウォール",
+                "lan1": "en",
+                "text1": "web application firewall",
+                "template": "ill"
+              }
+            ],
+            "references": [
+              {
+                "last": "Novet",
+                "first": "Jordan",
+                "date": "September 16, 2014",
+                "title": "Fastly grabs $40M on its quest to build a big, cool content-delivery network",
+                "url": "https://venturebeat.com/2014/09/16/fastly-funding/",
+                "url-status": "live",
+                "access-date": "December 23, 2020",
+                "work": "VentureBeat",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "date": "June 6, 2013",
+                "title": "Fastly Raises $10M for Content Delivery Network Built for Mobile, Real-Time World",
+                "url": "https://social.techcrunch.com/2013/06/05/fastly-raises-10m-for-content-delivery-network-built-for-mobile-real-time-world/",
+                "url-status": "live",
+                "access-date": "December 23, 2020",
+                "website": "TechCrunch",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Richards",
+                "first": "Ryan",
+                "date": "April 16, 2014",
+                "title": "Ruby on Rails on Fastly",
+                "url": "https://www.fastly.com/blog/ruby-on-rails-on-fastly",
+                "url-status": "live",
+                "archive-url": "https://web.archive.org/web/20201223092344/https://www.fastly.com/blog/ruby-on-rails-on-fastly",
+                "archive-date": "December 23, 2020",
+                "access-date": "December 23, 2020",
+                "website": "www.fastly.com",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Miller",
+                "first": "Ron",
+                "date": "September 16, 2014",
+                "title": "Fastly Growing Quickly Snags $40M As VCs Give Generously",
+                "url": "https://social.techcrunch.com/2014/09/16/fastly-growing-quickly-snags-40m-as-vcs-give-generously/",
+                "url-status": "live",
+                "access-date": "December 23, 2020",
+                "website": "TechCrunch",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Lardinois",
+                "first": "Frederic",
+                "date": "August 5, 2015",
+                "title": "Fastly Raises $75M For Its Real-Time CDN",
+                "url": "https://social.techcrunch.com/2015/08/05/fastly-raises-75m-series-d-round-for-its-real-time-cdn/",
+                "url-status": "live",
+                "access-date": "December 23, 2020",
+                "website": "TechCrunch",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Fastly raises another $50 million for its content delivery networking technology",
+                "url": "https://social.techcrunch.com/2017/05/23/marching-to-pied-pipers-fictional-tune-fastly-raises-50-million/",
+                "access-date": "December 23, 2020",
+                "website": "TechCrunch",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Dillet",
+                "first": "Romain",
+                "date": "July 17, 2018",
+                "title": "Fastly raises another $40 million before an IPO",
+                "url": "https://social.techcrunch.com/2018/07/16/fastly-raises-another-40-million-before-an-ipo/",
+                "url-status": "live",
+                "access-date": "December 23, 2020",
+                "website": "TechCrunch",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Shieber",
+                "first": "Jonathan",
+                "date": "April 20, 2019",
+                "title": "Fastly, the content delivery network, files for an IPO",
+                "url": "https://social.techcrunch.com/2019/04/19/fastly-the-content-delivery-network-files-for-an-ipo/",
+                "url-status": "live",
+                "access-date": "December 23, 2020",
+                "website": "TechCrunch",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Novet",
+                "first": "Jordan",
+                "date": "May 17, 2019",
+                "title": "Fastly shares rocket as much as 60% in IPO debut",
+                "url": "https://www.cnbc.com/2019/05/17/fastly-starts-trading-on-nyse.html",
+                "access-date": "December 23, 2020",
+                "website": "CNBC",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Shieber",
+                "first": "Jonathan",
+                "date": "August 27, 2020",
+                "title": "LA gets a big SaaS exit as Fastly nabs the Culver City-based Signal Sciences for $775M",
+                "url": "https://social.techcrunch.com/2020/08/27/la-gets-a-big-saas-exit-as-fastly-nabs-the-culver-city-based-signal-sciences-for-775m/",
+                "url-status": "live",
+                "access-date": "December 23, 2020",
+                "website": "TechCrunch",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "https://techcrunch.com/2015/09/09/google-partners-with-cloudflare-fastly-level-3-and-highwinds-to-help-developers-push-google-cloud-content-to-users-faster/",
+                "title": "Google Partners With CloudFlare, Fastly, Level 3 And Highwinds To Help Developers Push Google Cloud Content To Users Faster",
+                "work": "TechCrunch",
+                "accessdate": "2021-06-13",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Kepes",
+                "first": "Ben",
+                "title": "In the need for speed, Fastly goes all the way to the edge",
+                "website": "Computerworld",
+                "date": "April 18, 2017",
+                "url": "https://www.computerworld.com/article/3189666/internet/in-the-need-for-speed-fastly-goes-all-the-way-to-the-edge.html",
+                "access-date": "October 10, 2017",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "https://www.bizety.com/2017/04/18/fastly-releases-edge-cloud-platform/",
+                "title": "Fastly Releases Edge Cloud Platform",
+                "work": "Bizty",
+                "accessdate": "2021-06-13",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "オペレーション",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "FastlyのCDNサービスは、サイト固有のファイルを保存する'cdn.mydomain.com'のようなアドレスを提供する代わりに、すべてのウェブサイトトラフィックをFastlyのサーバ経由でルーティングするリバースプロキシモデルに従っている.",
+                    "links": [
+                      {
+                        "text": "リバースプロキシ",
+                        "type": "internal",
+                        "page": "リバースプロキシ"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "その後、世界中の約60箇所のうち、リクエストユーザの位置に一番近いPoint of presenceからコンテンツを取得する."
+                  },
+                  {
+                    "text": "月額50USドルの最低料金が適用される従量課金制サービスとして価格設定されており、帯域幅は地域に応じた料金で課金される."
+                  },
+                  {
+                    "text": "コンテンツはFastlyのサービスに直接アップロードされるのではなく、エンドユーザがコンテンツにアクセスするのに必要な時間を削減するために、オリジンサーバやキャッシュサーバから定期的にプルされる仕組みになっている.",
+                    "links": [
+                      {
+                        "text": "キャッシュサーバ",
+                        "type": "internal",
+                        "page": "キャッシュ (コンピュータシステム)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "FastlyはHTTP/3プロトコルベースのUDP、DRM有効化コンテンツ、メディアアクセスを制限するための暗号化とセキュアトークンなどをサポートしている.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "HTTP/3"
+                      },
+                      {
+                        "text": "UDP",
+                        "type": "internal",
+                        "page": "User Datagram Protocol"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "DRM"
+                      },
+                      {
+                        "text": "暗号化",
+                        "type": "internal",
+                        "page": "暗号化"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "text": "Point of presence",
+                "lan1": "en",
+                "text1": "Point of presence",
+                "template": "ill"
+              }
+            ],
+            "references": [
+              {
+                "date": "2021-03-31",
+                "title": "Fastly network map",
+                "url": "https://www.fastly.com/network-map",
+                "url-status": "live",
+                "access-date": "2021-06-09",
+                "website": "Fastly website",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "date": "2018-04-24",
+                "title": "How Fastly's CDN Service works",
+                "url": "https://docs.fastly.com/en/guides/how-fastlys-cdn-service-works",
+                "url-status": "live",
+                "access-date": "2021-06-09",
+                "website": "Fastly documentation",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Fastly review",
+                "last": "Williams",
+                "first": "Mike",
+                "work": "TechRadar Pro",
+                "date": "15 February 2021",
+                "url": "https://www.techradar.com/uk/reviews/fastly",
+                "accessdate": "2021-06-13",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "不祥事",
+            "depth": 0
+          },
+          {
+            "title": "2021年6月8日",
+            "depth": 1,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "2021年6月8日18時50分頃にCDNに障害が発生したことを、Fastlyは報告した.",
+                    "links": [
+                      {
+                        "text": "2021年",
+                        "type": "internal",
+                        "page": "2021年"
+                      },
+                      {
+                        "text": "6月8日",
+                        "type": "internal",
+                        "page": "6月8日"
+                      },
+                      {
+                        "text": "CDN",
+                        "type": "internal",
+                        "page": "コンテンツデリバリネットワーク"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "これにより、Reddit、gov.uk、Twitch、Spotify、Amazonなどの多数の主要なウェブサイトや、主要なニュースサイトのニューヨーク・タイムズ、ガーディアン、CNN、BBCが利用できなくなった.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Reddit"
+                      },
+                      {
+                        "text": "gov.uk",
+                        "type": "internal",
+                        "page": ".gov.uk"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Twitch"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Spotify"
+                      },
+                      {
+                        "text": "Amazon",
+                        "type": "internal",
+                        "page": "Amazon.com"
+                      },
+                      {
+                        "text": "ニューヨーク・タイムズ",
+                        "type": "internal",
+                        "page": "ニューヨーク・タイムズ"
+                      },
+                      {
+                        "text": "ガーディアン",
+                        "type": "internal",
+                        "page": "ガーディアン"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "CNN"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "BBC"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "その他にも、日本経済新聞社、読売新聞社、メルカリ、フィナンシャル・タイムズ（FT）、日本の政府系サイト、楽天グループのウェブサイトなどのサイトも一時的に閲覧できなくなった.",
+                    "links": [
+                      {
+                        "text": "日本経済新聞社",
+                        "type": "internal",
+                        "page": "日本経済新聞社"
+                      },
+                      {
+                        "text": "読売新聞社",
+                        "type": "internal",
+                        "page": "読売新聞社"
+                      },
+                      {
+                        "text": "メルカリ",
+                        "type": "internal",
+                        "page": "メルカリ"
+                      },
+                      {
+                        "text": "フィナンシャル・タイムズ",
+                        "type": "internal",
+                        "page": "フィナンシャル・タイムズ"
+                      },
+                      {
+                        "text": "楽天",
+                        "type": "internal",
+                        "page": "楽天"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "パーセル・ヒーローの消費者調査部門の責任者、デビッド・ジンクスは、世界中の小売業に与えた損失を約1500億円であると試算している."
+                  },
+                  {
+                    "text": "影響を受けた技術系ニュースサイトのThe Vergeは、Googleドキュメントを利用して進行中の障害について報告するという対処を行った.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "The Verge"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "この障害は、主要なウェブサイトの特定の機能にも影響を与え、たとえば、Twitterが使用している絵文字のホスティングサーバへの影響により絵文字が使えなくなった."
+                  },
+                  {
+                    "text": "Fastlyは停止の原因を特定のユーザの設定によって引き起こされたソフトウェアのバグであると説明している."
+                  }
+                ]
+              }
+            ],
+            "references": [
+              {
+                "list": [
+                  "和書"
+                ],
+                "date": "June 8, 2021",
+                "title": "世界のサイトで大規模障害　NYタイムズや日経電子版 順次復旧、コンテンツ配信サービスのfastlyが原因",
+                "url": "https://www.nikkei.com/article/DGXZQOUC08C8K0Y1A600C2000000/",
+                "accessdate": "June 9, 2021",
+                "website": "日経電子版",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Vast chunks of the internet are offline, including The Verge.",
+                "url": "https://twitter.com/verge/status/1402210406328942592",
+                "url-status": "live",
+                "access-date": "2021-06-08",
+                "website": "Twitter",
+                "language": "en",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "date": "2021-06-08",
+                "title": "Massive internet outage hits websites including Amazon, gov.uk and Guardian",
+                "url": "http://www.theguardian.com/technology/2021/jun/08/massive-internet-outage-hits-websites-including-amazon-govuk-and-guardian-fastly",
+                "access-date": "2021-06-08",
+                "website": "the Guardian",
+                "language": "en",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Rockwell",
+                "first": "Nick",
+                "date": "2021-06-08",
+                "title": "Summary of June 8 outage",
+                "url": "https://www.fastly.com/blog/summary-of-june-8-outage",
+                "url-status": "live",
+                "access-date": "2021-06-09",
+                "website": "www.fastly.com",
+                "language": "en-US",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Twitch, Pinterest, Reddit and more go down in Fastly CDN outage",
+                "url": "https://social.techcrunch.com/2021/06/08/numerous-popular-websites-are-facing-an-outage/",
+                "access-date": "2021-06-08",
+                "website": "TechCrunch",
+                "language": "en-US",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "list": [
+                  "和書"
+                ],
+                "date": "June 9, 2021",
+                "title": "大規模システム障害、世界数千件に影響 1500億円損失も",
+                "url": "https://www.nikkei.com/article/DGXZQOGN08FC50Y1A600C2000000/",
+                "accessdate": "June 9, 2021",
+                "website": "日経電子版",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "出典",
+            "depth": 0,
+            "templates": [
+              {
+                "template": "reflist"
+              }
+            ]
+          },
+          {
+            "title": "外部リンク",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": []
+              }
+            ],
+            "templates": [
+              {
+                "template": "official website"
+              }
+            ],
+            "lists": [
+              []
+            ]
+          }
+        ]
+      },
+      "name": "Fastly",
+      "lang": "ja"
     },
     {
       "found": true,
@@ -13774,13 +15357,624 @@
       "lang": "-"
     },
     {
-      "found": false,
+      "found": true,
       "title": "Node.js",
-      "text": "",
-      "summary": "",
-      "json": {},
+      "text": "Node.js（ノード・ジェイエス） はV8 JavaScriptエンジン上に構築されたJavaScript実行環境の1つである. イベント化された入出力を扱うサーバサイドJavaScript環境であり、Webサーバなどのスケーラブルなネットワークプログラムの記述を意図している. ライアン・ダールによって2009年に作成され、ダールを雇用しているJoyentの支援により成長している .\n\nV8 JavaScriptエンジンで動作するが、ChakraCoreバージョンやMozillaによるSpiderMonkey移植のプロジェクトも存在する.\n\nNode.jsはPythonのTwisted、Perlの、C言語の、Rubyのと同様の目的を持つ. ほとんどのJavaScriptとは異なり、ウェブブラウザの中で実行されるのではなく、むしろサーバサイドJavaScriptの一種である. Node.jsはいくつかのCommonJS仕様を実装している. Node.jsは対話的なテスト用にREPL (Read-eval-print loop) 環境を含んでいる.\n\nNode.jsを用いた構成としてはMEAN等が提唱されている.\n\nNode.jsによるHTTPサーバ版のHello world: .. サイズに制限がない限りデファクトイメージの利用を強く推奨\n\nデフォルト以外の設定（例: npmアップグレード）を利用する手引き「Docker and Node.js Best Practices」や GetStarted が公式から提供されている.\n\n\n\n\n * JavaScript\n * V8\n * Deno\n * MEAN (ソフトウェアバンドル)\n * Bun (ソフトウェア)\n\n\n * Node.js 日本ユーザグループ",
+      "summary": "Node.js（ノード・ジェイエス） はV8 JavaScriptエンジン上に構築されたJavaScript実行環境の1つである. イベント化された入出力を扱うサーバサイドJavaScript環境であり、Webサーバなどのスケーラブルなネットワークプログラムの記述を意図している....",
+      "json": {
+        "title": "Node.js",
+        "categories": [
+          "JavaScriptでプログラムされた自由ソフトウェア",
+          "ウェブ開発",
+          "オープンソースソフトウェア",
+          "C++でプログラムされた自由ソフトウェア"
+        ],
+        "sections": [
+          {
+            "title": "",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Node.js（ノード・ジェイエス） はV8 JavaScriptエンジン上に構築されたJavaScript実行環境の1つである.",
+                    "links": [
+                      {
+                        "text": "V8 JavaScriptエンジン",
+                        "type": "internal",
+                        "page": "V8 (JavaScriptエンジン)"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "JavaScript"
+                      }
+                    ],
+                    "formatting": {
+                      "bold": [
+                        "Node.js"
+                      ]
+                    }
+                  },
+                  {
+                    "text": "イベント化された入出力を扱うサーバサイドJavaScript環境であり、Webサーバなどのスケーラブルなネットワークプログラムの記述を意図している.",
+                    "links": [
+                      {
+                        "text": "イベント化",
+                        "type": "internal",
+                        "page": "イベント駆動型プログラミング"
+                      },
+                      {
+                        "text": "入出力",
+                        "type": "internal",
+                        "page": "入出力"
+                      },
+                      {
+                        "text": "サーバサイド",
+                        "type": "internal",
+                        "page": "サーバサイドスクリプト"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "JavaScript"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Webサーバ"
+                      },
+                      {
+                        "text": "スケーラブル",
+                        "type": "internal",
+                        "page": "スケーラビリティ"
+                      },
+                      {
+                        "text": "ネットワーク",
+                        "type": "internal",
+                        "page": "コンピュータネットワーク"
+                      },
+                      {
+                        "text": "プログラム",
+                        "type": "internal",
+                        "page": "プログラム (コンピュータ)"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "ライアン・ダールによって2009年に作成され、ダールを雇用しているJoyentの支援により成長している",
+                    "links": [
+                      {
+                        "text": "ライアン・ダール",
+                        "type": "internal",
+                        "page": "ライアン・ダール"
+                      },
+                      {
+                        "text": "2009年",
+                        "type": "internal",
+                        "page": "2009年"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Joyent"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "."
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "list": [
+                  "2009"
+                ],
+                "template": "release date and age"
+              },
+              {
+                "template": "wikidata バージョン"
+              },
+              {
+                "template": "wikidata バージョン 出版日"
+              }
+            ],
+            "infoboxes": [
+              {
+                "名称": {
+                  "text": "Node.js"
+                },
+                "ロゴ": {
+                  "text": "frameless|class=skin-invert-image|180px|Node.js",
+                  "links": [
+                    {
+                      "text": "frameless|class=skin-invert-image|180px|Node.js",
+                      "type": "internal",
+                      "page": "ファイル:Node.js logo.svg|frameless|class=skin-invert-image|180px"
+                    }
+                  ]
+                },
+                "開発者": {
+                  "text": "ライアン・ダール",
+                  "links": [
+                    {
+                      "text": "ライアン・ダール",
+                      "type": "internal",
+                      "page": "ライアン・ダール"
+                    }
+                  ]
+                },
+                "開発元": {
+                  "text": "OpenJS財団",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "OpenJS財団"
+                    }
+                  ]
+                },
+                "対応os": {
+                  "text": "macOS, Linux, Solaris, FreeBSD, OpenBSD, Windows, webOS",
+                  "links": [
+                    {
+                      "text": "macOS",
+                      "type": "internal",
+                      "page": "macOS"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "Linux"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "Solaris"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "FreeBSD"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "OpenBSD"
+                    },
+                    {
+                      "text": "Windows",
+                      "type": "internal",
+                      "page": "Microsoft Windows"
+                    },
+                    {
+                      "text": "webOS",
+                      "type": "internal",
+                      "page": "webOS"
+                    }
+                  ]
+                },
+                "対応プラットフォーム": {
+                  "text": "x86, x64, ARM, Power, z/Architecture",
+                  "links": [
+                    {
+                      "text": "x86",
+                      "type": "internal",
+                      "page": "x86"
+                    },
+                    {
+                      "text": "x64",
+                      "type": "internal",
+                      "page": "x64"
+                    },
+                    {
+                      "text": "ARM",
+                      "type": "internal",
+                      "page": "ARMアーキテクチャ"
+                    },
+                    {
+                      "text": "Power",
+                      "type": "internal",
+                      "page": "Power Architecture"
+                    },
+                    {
+                      "text": "z/Architecture",
+                      "type": "internal",
+                      "page": "z/Architecture"
+                    }
+                  ]
+                },
+                "ステータス": {
+                  "text": "開発中"
+                },
+                "プログラミング言語": {
+                  "text": "C++, JavaScript",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "C++"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "JavaScript"
+                    }
+                  ]
+                },
+                "種別": {
+                  "text": "イベント駆動型",
+                  "links": [
+                    {
+                      "text": "イベント駆動型",
+                      "type": "internal",
+                      "page": "イベント駆動型プログラミング"
+                    }
+                  ]
+                },
+                "ライセンス": {
+                  "text": "MITライセンス",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "MITライセンス"
+                    }
+                  ]
+                },
+                "公式サイト": {
+                  "text": "https://nodejs.org/"
+                }
+              }
+            ],
+            "references": [
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              },
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              },
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              },
+              {
+                "url": "http://www.sdtimes.com/NODE_JS_PUSHES_JAVASCRIPT_TO_THE_SERVER_SIDE/By_Alex_Handy/About_JAVASCRIPT_and_NODEJS/35668",
+                "title": "Node.js pushes JavaScript to the server-side",
+                "author": "Alex Handy",
+                "publisher": "SDTimes",
+                "date": "2011-06-24",
+                "accessdate": "2011-06-24",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "概要",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "V8 JavaScriptエンジンで動作するが、ChakraCoreバージョンやMozillaによるSpiderMonkey移植のプロジェクトも存在する.",
+                    "links": [
+                      {
+                        "text": "V8 JavaScriptエンジン",
+                        "type": "internal",
+                        "page": "V8 (JavaScriptエンジン)"
+                      },
+                      {
+                        "text": "ChakraCore",
+                        "type": "internal",
+                        "page": "Chakra",
+                        "anchor": "ChakraCore"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "Node.jsはPythonのTwisted、Perlの、C言語の、Rubyのと同様の目的を持つ.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Python"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Twisted"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Perl"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "C言語"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Ruby"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "ほとんどのJavaScriptとは異なり、ウェブブラウザの中で実行されるのではなく、むしろサーバサイドJavaScriptの一種である.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "JavaScript"
+                      },
+                      {
+                        "text": "ウェブブラウザ",
+                        "type": "internal",
+                        "page": "ウェブブラウザ"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Node.jsはいくつかのCommonJS仕様を実装している.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "CommonJS"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Node.jsは対話的なテスト用にREPL (Read-eval-print loop) 環境を含んでいる."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "Node.jsを用いた構成としてはMEAN等が提唱されている.",
+                    "links": [
+                      {
+                        "text": "MEAN",
+                        "type": "internal",
+                        "page": "MEAN (ソフトウェアバンドル)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "list": [
+                  "Perl Object Environment",
+                  "en",
+                  "Perl Object Environment"
+                ],
+                "template": "仮リンク"
+              },
+              {
+                "list": [
+                  "libevent",
+                  "en",
+                  "libevent"
+                ],
+                "template": "仮リンク"
+              },
+              {
+                "list": [
+                  "EventMachine",
+                  "en",
+                  "EventMachine"
+                ],
+                "template": "仮リンク"
+              }
+            ],
+            "references": [
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              }
+            ]
+          },
+          {
+            "title": "例",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Node.jsによるHTTPサーバ版のHello world:",
+                    "links": [
+                      {
+                        "text": "HTTPサーバ",
+                        "type": "internal",
+                        "page": "Webサーバ"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Hello world"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "..",
+                    "links": [
+                      {
+                        "text": "",
+                        "type": "external",
+                        "site": "https://github.com/nodejs/docker-node#nodeslim"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "サイズに制限がない限りデファクトイメージの利用を強く推奨"
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "デフォルト以外の設定（例: npmアップグレード）を利用する手引き「Docker and Node.js Best Practices」や GetStarted が公式から提供されている.",
+                    "links": [
+                      {
+                        "text": "Docker and Node.js Best Practices",
+                        "type": "external",
+                        "site": "https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md"
+                      },
+                      {
+                        "text": "GetStarted",
+                        "type": "external",
+                        "site": "https://nodejs.org/en/docs/guides/nodejs-docker-webapp/"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "references": [
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              }
+            ]
+          },
+          {
+            "title": "脚注・出典",
+            "depth": 0,
+            "templates": [
+              {
+                "list": [
+                  "2"
+                ],
+                "template": "reflist"
+              }
+            ]
+          },
+          {
+            "title": "関連項目",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": []
+              }
+            ],
+            "templates": [
+              {
+                "template": "commonscat"
+              }
+            ],
+            "lists": [
+              [
+                {
+                  "text": "JavaScript",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "JavaScript"
+                    }
+                  ]
+                },
+                {
+                  "text": "V8",
+                  "links": [
+                    {
+                      "text": "V8",
+                      "type": "internal",
+                      "page": "V8 (JavaScriptエンジン)"
+                    }
+                  ]
+                },
+                {
+                  "text": "Deno",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Deno"
+                    }
+                  ]
+                },
+                {
+                  "text": "MEAN (ソフトウェアバンドル)",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "MEAN (ソフトウェアバンドル)"
+                    }
+                  ]
+                },
+                {
+                  "text": "Bun (ソフトウェア)",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Bun (ソフトウェア)"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "title": "外部リンク",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": []
+              }
+            ],
+            "templates": [
+              {
+                "list": [
+                  "https://nodejs.org/en/"
+                ],
+                "template": "official website"
+              },
+              {
+                "template": "en icon"
+              },
+              {
+                "id": "nodejs",
+                "name": "Node.js",
+                "template": "twitter"
+              },
+              {
+                "list": [
+                  "nodejs/node"
+                ],
+                "template": "github"
+              },
+              {
+                "template": "javascript"
+              },
+              {
+                "template": "node.js"
+              },
+              {
+                "template": "authority control"
+              }
+            ],
+            "lists": [
+              [
+                {
+                  "text": "Node.js 日本ユーザグループ",
+                  "links": [
+                    {
+                      "text": "Node.js 日本ユーザグループ",
+                      "type": "external",
+                      "site": "https://nodejs.jp/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
       "name": "Node.js",
-      "lang": "-"
+      "lang": "ja"
     },
     {
       "found": true,
@@ -14910,13 +17104,371 @@
       "lang": "ja"
     },
     {
-      "found": false,
-      "title": "React_Router",
-      "text": "",
-      "summary": "",
-      "json": {},
+      "found": true,
+      "title": "React Router",
+      "text": "React Router (formerly Remix) is an open source full-stack web framework. The software is designed for web applications built with front-end JavaScript frameworks like React and Vue.js. Remix supports server-side rendering and client-side routing. Remix has been presented as an alternative to the popular React framework Next.js.\n\nInitially available through a paid subscription, the software was made open source in October 2021. The team developing Remix (that also developed React Router) was acquired by Shopify in 2022, but has promised that development will stay open-source and \"independent\". The Remix team announced at React Conf 2024 that the next major version of Remix will be merged into and released as React Router v7.\n\n\n\n\n",
+      "summary": "React Router (formerly Remix) is an open source full-stack web framework. The software is designed for web applications built with front-end...",
+      "json": {
+        "title": "React Router",
+        "isStub": true,
+        "categories": [
+          "JavaScript web frameworks",
+          "Software using the MIT license",
+          "2021 software"
+        ],
+        "sections": [
+          {
+            "title": "",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "React Router (formerly Remix) is an open source full-stack web framework.",
+                    "links": [
+                      {
+                        "text": "open source",
+                        "type": "internal",
+                        "page": "open source"
+                      },
+                      {
+                        "text": "full-stack",
+                        "type": "internal",
+                        "page": "full-stack (software)"
+                      },
+                      {
+                        "text": "web framework",
+                        "type": "internal",
+                        "page": "web framework"
+                      }
+                    ],
+                    "formatting": {
+                      "bold": [
+                        "React Router"
+                      ]
+                    }
+                  },
+                  {
+                    "text": "The software is designed for web applications built with front-end JavaScript frameworks like React and Vue.js.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "JavaScript"
+                      },
+                      {
+                        "text": "React",
+                        "type": "internal",
+                        "page": "React (software)"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Vue.js"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Remix supports server-side rendering and client-side routing.",
+                    "links": [
+                      {
+                        "text": "server-side rendering",
+                        "type": "internal",
+                        "page": "server-side scripting"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Remix has been presented as an alternative to the popular React framework Next.js.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Next.js"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "Initially available through a paid subscription, the software was made open source in October 2021."
+                  },
+                  {
+                    "text": "The team developing Remix (that also developed React Router) was acquired by Shopify in 2022, but has promised that development will stay open-source and \"independent\".",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Shopify"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "The Remix team announced at React Conf 2024 that the next major version of Remix will be merged into and released as React Router v7."
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "description": "Web development framework",
+                "template": "short description"
+              },
+              {
+                "template": "date",
+                "data": {
+                  "year": "2020",
+                  "month": "11",
+                  "date": "01",
+                  "template": "start date and age",
+                  "text": "November 1, 2020"
+                }
+              },
+              {
+                "template": "date",
+                "data": {
+                  "year": "2025",
+                  "month": "12",
+                  "date": "17",
+                  "template": "start date and age",
+                  "text": "December 17, 2025"
+                }
+              },
+              {
+                "list": [
+                  "https://remix.run",
+                  "https://reactrouter.com (React Router)"
+                ],
+                "template": "ubl"
+              },
+              {
+                "list": [
+                  "Free software"
+                ],
+                "template": "portal"
+              }
+            ],
+            "infoboxes": [
+              {
+                "title": {
+                  "text": "Remix"
+                },
+                "logo": {
+                  "text": "React Router lockup.svg"
+                },
+                "logo class": {
+                  "text": "skin-invert"
+                },
+                "logo alt": {
+                  "text": "Lockkup of React Router, a successor to Remix"
+                },
+                "other_names": {
+                  "text": "React Router (since Nov 2024)"
+                },
+                "author": {
+                  "text": "Remix Software Inc. 2020-2021"
+                },
+                "developer": {
+                  "text": "Shopify and the open-source community",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Shopify"
+                    }
+                  ]
+                },
+                "released": {
+                  "text": "November 1, 2020"
+                },
+                "latest release version": {
+                  "text": "v7.11.0"
+                },
+                "latest release date": {
+                  "text": "December 17, 2025"
+                },
+                "programming language": {
+                  "text": "JavaScript, TypeScript",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "JavaScript"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "TypeScript"
+                    }
+                  ]
+                },
+                "platform": {
+                  "text": "Web platform",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Web platform"
+                    }
+                  ]
+                },
+                "genre": {
+                  "text": "full-stack web framework / JavaScript library",
+                  "links": [
+                    {
+                      "text": "full-stack",
+                      "type": "internal",
+                      "page": "full-stack (software)"
+                    },
+                    {
+                      "text": "web framework",
+                      "type": "internal",
+                      "page": "web framework"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "JavaScript library"
+                    }
+                  ]
+                },
+                "license": {
+                  "text": "MIT License",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "MIT License"
+                    }
+                  ]
+                },
+                "website": {
+                  "text": "https://remix.run\n\nhttps://reactrouter.com (React Router)"
+                }
+              }
+            ],
+            "references": [
+              {
+                "last1": "Tyson",
+                "first1": "Matthew",
+                "title": "Intro to Remix: A leader in full-stack evolution",
+                "url": "https://www.infoworld.com/article/3687210/intro-to-remix-a-leader-in-full-stack-evolution.html",
+                "work": "InfoWorld",
+                "access-date": "11 April 2024",
+                "language": "en",
+                "date": "9 February 2023",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last1": "Scanlon",
+                "first1": "Paul",
+                "title": "I’m in an Open Relationship with Remix",
+                "url": "https://thenewstack.io/im-in-an-open-relationship-with-remix/",
+                "work": "The New Stack",
+                "access-date": "11 April 2024",
+                "date": "21 November 2023",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last1": "MacManus",
+                "first1": "Richard",
+                "title": "Remix Takes on Next.js in Battle of the React Frameworks",
+                "url": "https://thenewstack.io/remix-takes-on-next-js-in-battle-of-the-react-frameworks/",
+                "work": "The New Stack",
+                "access-date": "11 April 2024",
+                "date": "6 February 2024",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last1": "Deosthale",
+                "first1": "Atharva",
+                "title": "Remix: A guide to the React framework taking on Next.js",
+                "url": "https://blog.logrocket.com/guide-to-remix-react-framework/",
+                "work": "LogRocket Blog",
+                "access-date": "11 April 2024",
+                "date": "3 November 2022",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Shopify acquires Remix to bolster its headless commerce framework",
+                "url": "https://betakit.com/shopify-acquires-remix-to-bolster-its-headless-commerce-framework/",
+                "access-date": "11 April 2024",
+                "language": "en-CA",
+                "date": "31 October 2022",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last1": "Wiggers",
+                "first1": "Kyle",
+                "title": "Shopify acquires Remix to bolster its storefront design tools",
+                "url": "https://techcrunch.com/2022/10/31/shopify-acquires-remix-to-bolster-its-storefront-design-tools/",
+                "work": "TechCrunch",
+                "access-date": "11 April 2024",
+                "date": "31 October 2022",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Merging Remix and React Router",
+                "last1": "Lybrand",
+                "first1": "Brooks",
+                "url": "https://remix.run/blog/merging-remix-and-react-router",
+                "access-date": "19 July 2024",
+                "work": "Remix Blog",
+                "date": "15 May 2024",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "last": "Jackson",
+                "first": "M.",
+                "date": "2024-11-22",
+                "title": "React Router v7",
+                "url": "https://remix.run/blog/react-router-v7",
+                "access-date": "2025-04-04",
+                "work": "remix.run",
+                "language": "en",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "References",
+            "depth": 0,
+            "templates": [
+              {
+                "template": "reflist"
+              }
+            ]
+          },
+          {
+            "title": "External links",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": []
+              }
+            ],
+            "templates": [
+              {
+                "list": [
+                  "https://remix.run/"
+                ],
+                "template": "official website"
+              },
+              {
+                "template": "web frameworks"
+              },
+              {
+                "template": "programming-software-stub"
+              }
+            ],
+            "lists": [
+              []
+            ]
+          }
+        ]
+      },
       "name": "React_Router",
-      "lang": "-"
+      "lang": "en"
     },
     {
       "found": true,
@@ -15586,13 +18138,2017 @@
       "lang": "ja"
     },
     {
-      "found": false,
+      "found": true,
       "title": "TypeScript",
-      "text": "",
-      "summary": "",
-      "json": {},
+      "text": "TypeScript はマイクロソフトによって開発され、メンテナンスされているフリーでオープンソースのプログラミング言語である. TypeScriptはJavaScriptに対して、省略も可能な静的型付けとクラスベースオブジェクト指向を加えた厳密なスーパーセット（既存のものを全て含んだ上でより機能が拡張されている上位互換となるモノ）となっている. C#のリードアーキテクトであり、DelphiとTurbo Pascalの開発者でもあるアンダース・ヘルスバーグがTypeScriptの開発に関わっている. TypeScriptはクライアントサイド、あるいはサーバサイド (Node.js) で実行されるJavaScriptアプリケーションの開発に利用できる.\n\nTypeScriptは大規模なアプリケーションの開発のために設計されている.\n\nTypeScriptはJavaScriptのスーパーセットであるため、既存のJavaScriptプログラムは、全て有効なTypeScriptプログラムとなる.\n\nTypeScriptは型定義ファイルをサポートしており、既存のJavaScriptライブラリに型情報を付与して利用できる. 既存のオブジェクトファイルの構造を記述できるC/C++のヘッダファイルとよく似た仕組みである. これによって、その型定義ファイル内で定義された値を、他のプログラムがあたかも静的に型付けされたTypeScriptエンティティであるかのように利用することができるようになる. jQuery、MongoDB、D3.jsのような人気のあるライブラリのための、サードパーティーのヘッダファイルがある. Node.jsベーシック・モジュールのためのヘッダも入手可能で、Node.jsプログラムの開発もTypeScriptの中で行える.\n\nTypeScriptの主要な実装は、自身もTypeScriptで書かれた、JavaScriptへのトランスコンパイラである. ライセンスはApache 2 License.\n\nTypeScriptはMicrosoft Visual Studio 2013 Update 2以降でfirst-classプログラミング言語として、C# やその他のマイクロソフト言語群とともに含まれるようになった. 公式の拡張パックによりMicrosoft Visual Studio 2012 でも TypeScript をサポート可能である.\n\nTypeScriptはマイクロソフトで2年間かけて内部開発された後、2012年10月に初めて外部に公開された（version 0.8）. 発表から間もなく、ミゲル・デ・イカザは、この言語そのものについては称賛しつつも、Microsoft Visual Studio以外では成熟した統合開発環境（IDE）でのサポートがなく、LinuxおよびOS Xでは利用できないことには批判的であった. 2013年時点では、他のIDEでもサポートされており、特にEclipseでは、Palantir Technologies社が貢献したプラグインによりサポートされている. Emacs、Vim、Sublime などの多くのテキストエディタもTypeScriptをサポートしている. Atomプラグインも利用可能である.\n\n2013年にリリースされたTypeScript 0.9では、総称型のサポートを追加した. TypeScript 1.0は Build 2014会合でリリースされた. Visual Studio 2013 Update 2ではTypeScriptが組み込まれている.\n\n2014年7月、開発チームは新しいTypeScriptコンパイラを発表し、パフォーマンスは5倍増加したと公称している. 同時に、当初はCodePlex上で公開されていたソースコードはGitHubに移動された.\n\n2016年9月22日、TypeScript 2.0がリリースされ、null非許容型への対応を含む幾つかの機能が盛り込まれた.\n\n2017年2月にTypeScript 2.2がリリースされて以降は、それまで不定期だったバージョンアップを2ヶ月に1回行うリリースサイクルが定められた.\n\n2018年7月30日、TypeScript 3.0がリリースされ、残りのパラメーターと展開式のタプル、タプル型を持つ残りのパラメーター、ジェネリックな残りのパラメーターなど、多くの言語機能が追加された.\n\n2020年8月20日、TypeScript4.0がリリースされ、4.0では重大な変更はされていないが、カスタムJSXファクトリやVariadic Tuple型などの言語機能が追加された.\n\n2022年11月15日、TypeScript4.9がリリースされ、新たにsatisfies演算子が導入され、ECMAScriptの次期機能auto-accessorsがサポートされた.\n\n2023年3月16日、TypeScript 5.0がリリースされ、decoratorsがサポートされた.\n\n2025年3月11日、TypeScriptのリードアーキテクトであるアンダース・ヘルスバーグはTypeScriptのコンパイラと各種ツール群をGoに移植する「Project Corsa」を実施中であることを発表した. ヘルスバーグはGoにネイティブ移植することでコンパイラの処理速度が約10倍に高速化し、メモリ使用量も大幅に削減されることを示した. Goを採用した理由について、ヘルスバーグは既存のTypeScriptで書かれたコンパイラとの構造的な互換性を重視したこと、メモリ管理が容易であること、複雑なグラフ処理を効率的に処理できることなどの技術要件によるものだと述べている. 従来のJavaScriptベースの実装はTypeScript 6.xとして開発し、ネイティブ実装は既存のTypeScriptと十分な互換性を持った時点でTypeScript 7.0としてリリースされる計画である.\n\nTypeScriptはマイクロソフトやその外部の顧客たちの間で、JavaScriptで大規模アプリケーション開発をする上での欠点を補うために作られた. 複雑なJavaScriptコードを扱うのは困難なことから、JavaScript言語の中でコンポーネント群を開発するのを容易にするための自作ツールが必要になった.\n\nTypeScriptの開発者は、標準との互換性や、クロスプラットフォームサポートを壊さないで済む解決策を模索した. 現在のECMAScript言語標準が将来的にクラスベースオブジェクト指向をサポートする提案があることを踏まえ、TypeScriptはその提案に基づくことになった. これにより、その提案に基づいたスーパーセットであり、幾つかの点で言語の文法を拡張したJavaScriptコンパイラへと至ることとなった. このコンパイラが、言語を拡張した部分を一般的な JavaScriptへと変換する仕組みである. この意味ではTypeScriptはECMAScript 2015において期待されている機能を先取りするようなものであるともいえる. ECMAScriptの提案にないがTypeScriptに独自に搭載された機能として、静的言語解析を可能にする静的型付け機能（使用するかどうかは選択可能）がある. これは諸ツールやIDEによるサポートを容易にする.\n\nTypeScriptはJavaScript（ECMAScript 5）に次のような言語機能の拡張を加えたものである.\n\nECMAScript 6由来 ECMAScript 7由来 独自\n * クラス\n * アロー関数式（無名関数）\n * オプション引数、デフォルト引数\n * let, const\n * テンプレート文字列：文字列内への変数埋め込み\n * モジュール\n * for/of\n * 分割代入\n * Symbol\n * デコレーター\n * async/await\n * 型注釈（変数、引数、戻り値などの型宣言）とコンパイル時の型チェック\n * 型推論、型ガード - if文の instanceof などを利用した型推論\n * インタフェース\n * 列挙型\n * Mixin\n * ジェネリック\n * 名前空間\n * タプル型\n * 共用体型、\n * 型エイリアス\n\n構文的には、静的型付けやクラス、継承、インタフェースのようなオブジェクト指向、名前空間などの機能を追加する、ECMA-262 言語標準のマイクロソフトによる実装であるJScript.NETとTypeScriptはよく似ている.\n\nTypeScript はECMAScript 2015の厳密なスーパーセットであり、ECMAScript 2015はECMAScript 5（一般的にJavaScriptと呼ばれているもの）のスーパーセットである. 従って、JavaScriptプログラムは有効なTypeScriptプログラムでもあるので、TypeScriptプログラムはJavaScriptを境目なしに利用できる.\n\nデフォルト設定の場合、コンパイラはECMAScript 3を出力するが、オプションによりECMAScript 3から最新のECMAScriptまでの間で出力対象を選択することができる.\n\nTypeScriptでは、既存のJavaScriptコードを使うことができる. つまり、人気のあるJavaScriptライブラリを取り入れることができ、他のJavaScriptからTypeScriptで作られたコードを呼ぶこともできる. これらの外部ライブラリに対する型宣言は、DefinitelyTyped（後述）に収録されていればnpmを用いて簡単にインストールすることができる.\n\nTypeScriptはコンパイル時における型検査を可能にするために、型アノテーションによる静的型付けの仕組みを提供している. この仕組みの利用は任意なので、この仕組みを無視して普通のJavaScriptの動的型付けを使うこともできる.\n\n自体もTypeScriptで作成されている（セルフホスティング）. これは通常のJavaScript にコンパイルでき、任意のホスト上のJavaScriptエンジン（たとえばブラウザなど）上で実行できる. ライセンスは Apache License 2.0である. コンパイラ・パッケージはコンパイラを実行出来るスクリプトホストに同梱されてくる. Node.js等と共にコンパイラ・パッケージとして配布される場合もある.\n\nまた、JavaScriptで書かれたクライアントサイドのコンパイラのアルファ版もある. これはページロード中にTypeScriptコードを実行する.\n\nTypeScriptで書いたコードをブラウザ上で実行するにはコンパイルが必要. tsc --strict -t es5 *.ts\n\n以下の統合開発環境やテキストエディタがTypeScriptに対応している.\n * Microsoft Visual Studio\n * 2013 Update 2から標準搭載\n * JetBrains社によるReSharperプラグイン\n * Visual Studio Code\n * WebMatrix\n * IntelliJ IDEA、WebStorm\n * Eclipse - Eclipse TypeScript Plug-in、TypEcs\n * NetBeans - NetBeans TypeScript Editor\n * テキストエディタ - Sublime Text、Emacs、Vim\n * クラウド型IDE - Cloud9 IDE、Codenvy、Codeanywhere\n\n\n * JavaScript\n * ECMAScript\n * Babel (トランスコンパイラ)\n * Dart\n * AtScript\n * Node.js\n * Deno\n\n\n\n\n",
+      "summary": "TypeScript はマイクロソフトによって開発され、メンテナンスされているフリーでオープンソースのプログラミング言語である. TypeScriptはJavaScriptに対して、省略も可能な静的型付けとクラスベースオブジェクト指向を加えた厳密なスーパーセット（既存のものを全て...",
+      "json": {
+        "title": "TypeScript",
+        "categories": [
+          "プログラミング言語",
+          "JavaScriptを生成する言語",
+          "スクリプト言語",
+          "クロスプラットフォームのソフトウェア",
+          "オブジェクト指向言語",
+          "マイクロソフトのプログラミング言語",
+          "マイクロソフトのフリーソフト"
+        ],
+        "sections": [
+          {
+            "title": "",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScript はマイクロソフトによって開発され、メンテナンスされているフリーでオープンソースのプログラミング言語である.",
+                    "links": [
+                      {
+                        "text": "マイクロソフト",
+                        "type": "internal",
+                        "page": "マイクロソフト"
+                      },
+                      {
+                        "text": "フリーでオープンソース",
+                        "type": "internal",
+                        "page": "FOSS"
+                      },
+                      {
+                        "text": "プログラミング言語",
+                        "type": "internal",
+                        "page": "プログラミング言語"
+                      }
+                    ],
+                    "formatting": {
+                      "bold": [
+                        "TypeScript"
+                      ]
+                    }
+                  },
+                  {
+                    "text": "TypeScriptはJavaScriptに対して、省略も可能な静的型付けとクラスベースオブジェクト指向を加えた厳密なスーパーセット（既存のものを全て含んだ上でより機能が拡張されている上位互換となるモノ）となっている.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "JavaScript"
+                      },
+                      {
+                        "text": "静的型付け",
+                        "type": "internal",
+                        "page": "静的型付け"
+                      },
+                      {
+                        "text": "オブジェクト指向",
+                        "type": "internal",
+                        "page": "オブジェクト指向プログラミング"
+                      },
+                      {
+                        "text": "スーパーセット",
+                        "type": "internal",
+                        "page": "部分集合"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "C#のリードアーキテクトであり、DelphiとTurbo Pascalの開発者でもあるアンダース・ヘルスバーグがTypeScriptの開発に関わっている.",
+                    "links": [
+                      {
+                        "text": "C#",
+                        "type": "internal",
+                        "page": "C Sharp"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Delphi"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Turbo Pascal"
+                      },
+                      {
+                        "text": "アンダース・ヘルスバーグ",
+                        "type": "internal",
+                        "page": "アンダース・ヘルスバーグ"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "TypeScriptはクライアントサイド、あるいはサーバサイド (Node.js) で実行されるJavaScriptアプリケーションの開発に利用できる.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Node.js"
+                      },
+                      {
+                        "text": "アプリケーション",
+                        "type": "internal",
+                        "page": "アプリケーションソフトウェア"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptは大規模なアプリケーションの開発のために設計されている."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptはJavaScriptのスーパーセットであるため、既存のJavaScriptプログラムは、全て有効なTypeScriptプログラムとなる.",
+                    "links": [
+                      {
+                        "text": "プログラム",
+                        "type": "internal",
+                        "page": "プログラム (コンピュータ)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptは型定義ファイルをサポートしており、既存のJavaScriptライブラリに型情報を付与して利用できる.",
+                    "links": [
+                      {
+                        "text": "ライブラリ",
+                        "type": "internal",
+                        "page": "ライブラリ"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "既存のオブジェクトファイルの構造を記述できるC/C++のヘッダファイルとよく似た仕組みである.",
+                    "links": [
+                      {
+                        "text": "C",
+                        "type": "internal",
+                        "page": "C言語"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "C++"
+                      },
+                      {
+                        "text": "ヘッダファイル",
+                        "type": "internal",
+                        "page": "ヘッダファイル"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "これによって、その型定義ファイル内で定義された値を、他のプログラムがあたかも静的に型付けされたTypeScriptエンティティであるかのように利用することができるようになる."
+                  },
+                  {
+                    "text": "jQuery、MongoDB、D3.jsのような人気のあるライブラリのための、サードパーティーのヘッダファイルがある.",
+                    "links": [
+                      {
+                        "text": "jQuery",
+                        "type": "internal",
+                        "page": "jQuery"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "MongoDB"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "D3.js"
+                      },
+                      {
+                        "text": "サードパーティー",
+                        "type": "internal",
+                        "page": "サードパーティー"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Node.jsベーシック・モジュールのためのヘッダも入手可能で、Node.jsプログラムの開発もTypeScriptの中で行える.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Node.js"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptの主要な実装は、自身もTypeScriptで書かれた、JavaScriptへのトランスコンパイラである.",
+                    "links": [
+                      {
+                        "text": "トランスコンパイラ",
+                        "type": "internal",
+                        "page": "トランスコンパイラ"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "ライセンスはApache 2 License.",
+                    "links": [
+                      {
+                        "text": "Apache 2 License",
+                        "type": "internal",
+                        "page": "Apache License"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptはMicrosoft Visual Studio 2013 Update 2以降でfirst-classプログラミング言語として、C# やその他のマイクロソフト言語群とともに含まれるようになった.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Microsoft Visual Studio"
+                      },
+                      {
+                        "text": "C#",
+                        "type": "internal",
+                        "page": "C Sharp"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "公式の拡張パックによりMicrosoft Visual Studio 2012 でも TypeScript をサポート可能である."
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "1": "英語版 \"TypeScript\" 00:12, 18 March 2016 (UTC)",
+                "date": "2016年3月",
+                "template": "翻訳中途"
+              },
+              {
+                "list": [
+                  "250px"
+                ],
+                "template": "wikidata logo"
+              },
+              {
+                "list": [
+                  "2012",
+                  "10",
+                  "01"
+                ],
+                "template": "release date and age"
+              },
+              {
+                "template": "wikidata バージョン バージョン種類毎"
+              },
+              {
+                "template": "conditionalurl"
+              }
+            ],
+            "infoboxes": [
+              {
+                "name": {
+                  "text": "TypeScript"
+                },
+                "file ext": {
+                  "text": ".ts"
+                },
+                "paradigm": {
+                  "text": "マルチパラダイム : スクリプト、オブジェクト指向、構造化、命令型、関数型、ジェネリック",
+                  "links": [
+                    {
+                      "text": "マルチパラダイム",
+                      "type": "internal",
+                      "page": "マルチパラダイムプログラミング言語"
+                    },
+                    {
+                      "text": "スクリプト",
+                      "type": "internal",
+                      "page": "スクリプト言語"
+                    },
+                    {
+                      "text": "オブジェクト指向",
+                      "type": "internal",
+                      "page": "オブジェクト指向プログラミング"
+                    },
+                    {
+                      "text": "構造化",
+                      "type": "internal",
+                      "page": "構造化プログラミング"
+                    },
+                    {
+                      "text": "命令型",
+                      "type": "internal",
+                      "page": "命令型プログラミング"
+                    },
+                    {
+                      "text": "関数型",
+                      "type": "internal",
+                      "page": "関数型プログラミング"
+                    },
+                    {
+                      "text": "ジェネリック",
+                      "type": "internal",
+                      "page": "ジェネリックプログラミング"
+                    }
+                  ]
+                },
+                "designer": {
+                  "text": "マイクロソフト",
+                  "links": [
+                    {
+                      "text": "マイクロソフト",
+                      "type": "internal",
+                      "page": "マイクロソフト"
+                    }
+                  ]
+                },
+                "developer": {
+                  "text": "マイクロソフト",
+                  "links": [
+                    {
+                      "text": "マイクロソフト",
+                      "type": "internal",
+                      "page": "マイクロソフト"
+                    }
+                  ]
+                },
+                "frequently_updated": {
+                  "text": "yes"
+                },
+                "influenced by": {
+                  "text": "JavaScript, Java, C#",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "JavaScript"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "Java"
+                    },
+                    {
+                      "text": "C#",
+                      "type": "internal",
+                      "page": "C Sharp"
+                    }
+                  ]
+                },
+                "influenced": {
+                  "text": "AtScript",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "AtScript"
+                    }
+                  ]
+                },
+                "license": {
+                  "text": "Apache License 2.0",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Apache License"
+                    }
+                  ]
+                },
+                "wikibooks": {
+                  "text": "TypeScript"
+                }
+              }
+            ],
+            "references": [
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              },
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              },
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              },
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              },
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              },
+              {
+                "url": "https://github.com/borisyankov/DefinitelyTyped",
+                "title": "borisyankov/DefinitelyTyped",
+                "work": "GitHub",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              },
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              }
+            ]
+          },
+          {
+            "title": "歴史",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptはマイクロソフトで2年間かけて内部開発された後、2012年10月に初めて外部に公開された（version 0.8）."
+                  },
+                  {
+                    "text": "発表から間もなく、ミゲル・デ・イカザは、この言語そのものについては称賛しつつも、Microsoft Visual Studio以外では成熟した統合開発環境（IDE）でのサポートがなく、LinuxおよびOS Xでは利用できないことには批判的であった.",
+                    "links": [
+                      {
+                        "text": "ミゲル・デ・イカザ",
+                        "type": "internal",
+                        "page": "ミゲル・デ・イカザ"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Microsoft Visual Studio"
+                      },
+                      {
+                        "text": "統合開発環境",
+                        "type": "internal",
+                        "page": "統合開発環境"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Linux"
+                      },
+                      {
+                        "text": "OS X",
+                        "type": "internal",
+                        "page": "macOS"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "2013年時点では、他のIDEでもサポートされており、特にEclipseでは、Palantir Technologies社が貢献したプラグインによりサポートされている.",
+                    "links": [
+                      {
+                        "text": "Eclipse",
+                        "type": "internal",
+                        "page": "Eclipse (統合開発環境)"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Palantir Technologies"
+                      },
+                      {
+                        "text": "プラグイン",
+                        "type": "internal",
+                        "page": "プラグイン"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Emacs、Vim、Sublime などの多くのテキストエディタもTypeScriptをサポートしている.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Emacs"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Vim"
+                      },
+                      {
+                        "text": "Sublime",
+                        "type": "internal",
+                        "page": "Sublime Text"
+                      },
+                      {
+                        "text": "テキストエディタ",
+                        "type": "internal",
+                        "page": "テキストエディタ"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Atomプラグインも利用可能である.",
+                    "links": [
+                      {
+                        "text": "Atom",
+                        "type": "internal",
+                        "page": "Atom (テキストエディタ)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2013年にリリースされたTypeScript 0.9では、総称型のサポートを追加した.",
+                    "links": [
+                      {
+                        "text": "総称型",
+                        "type": "internal",
+                        "page": "総称型"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "TypeScript 1.0は Build 2014会合でリリースされた."
+                  },
+                  {
+                    "text": "Visual Studio 2013 Update 2ではTypeScriptが組み込まれている.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Visual Studio 2013"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2014年7月、開発チームは新しいTypeScriptコンパイラを発表し、パフォーマンスは5倍増加したと公称している."
+                  },
+                  {
+                    "text": "同時に、当初はCodePlex上で公開されていたソースコードはGitHubに移動された.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "CodePlex"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "GitHub"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2016年9月22日、TypeScript 2.0がリリースされ、null非許容型への対応を含む幾つかの機能が盛り込まれた."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2017年2月にTypeScript 2.2がリリースされて以降は、それまで不定期だったバージョンアップを2ヶ月に1回行うリリースサイクルが定められた."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2018年7月30日、TypeScript 3.0がリリースされ、残りのパラメーターと展開式のタプル、タプル型を持つ残りのパラメーター、ジェネリックな残りのパラメーターなど、多くの言語機能が追加された."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2020年8月20日、TypeScript4.0がリリースされ、4.0では重大な変更はされていないが、カスタムJSXファクトリやVariadic Tuple型などの言語機能が追加された."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2022年11月15日、TypeScript4.9がリリースされ、新たにsatisfies演算子が導入され、ECMAScriptの次期機能auto-accessorsがサポートされた.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "ECMAScript"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2023年3月16日、TypeScript 5.0がリリースされ、decoratorsがサポートされた."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "2025年3月11日、TypeScriptのリードアーキテクトであるアンダース・ヘルスバーグはTypeScriptのコンパイラと各種ツール群をGoに移植する「Project Corsa」を実施中であることを発表した.",
+                    "links": [
+                      {
+                        "text": "アンダース・ヘルスバーグ",
+                        "type": "internal",
+                        "page": "アンダース・ヘルスバーグ"
+                      },
+                      {
+                        "text": "Go",
+                        "type": "internal",
+                        "page": "Go (プログラミング言語)"
+                      },
+                      {
+                        "text": "移植",
+                        "type": "internal",
+                        "page": "移植 (ソフトウェア)"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "ヘルスバーグはGoにネイティブ移植することでコンパイラの処理速度が約10倍に高速化し、メモリ使用量も大幅に削減されることを示した."
+                  },
+                  {
+                    "text": "Goを採用した理由について、ヘルスバーグは既存のTypeScriptで書かれたコンパイラとの構造的な互換性を重視したこと、メモリ管理が容易であること、複雑なグラフ処理を効率的に処理できることなどの技術要件によるものだと述べている."
+                  },
+                  {
+                    "text": "従来のJavaScriptベースの実装はTypeScript 6.xとして開発し、ネイティブ実装は既存のTypeScriptと十分な互換性を持った時点でTypeScript 7.0としてリリースされる計画である."
+                  }
+                ]
+              }
+            ],
+            "references": [
+              {
+                "url": "http://www.infoworld.com/d/application-development/microsoft-augments-javascript-large-scale-development-203737",
+                "title": "Microsoft augments JavaScript for large-scale development",
+                "date": "1 October 2012",
+                "work": "InfoWorld",
+                "publisher": "IDG",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://blogs.msdn.com/b/typescript/archive/2014/04/02/announcing-typescript-1-0.aspx",
+                "title": "Announcing TypeScript 1.0",
+                "date": "2 April 2014",
+                "first": "Jonathan",
+                "last": "Turner",
+                "publisher": "マイクロソフト",
+                "work": "TypeScript Language team blog",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://tirania.org/blog/archive/2012/Oct-01.html",
+                "title": "TypeScript: First Impressions",
+                "date": "2012-10-01",
+                "author": "ミゲル・デ・イカザ",
+                "quote": "But TypeScript only delivers half of the value in using a strongly typed language to Unix developers: strong typing. Intellisense, code completion and refactoring are tools that are only available to Visual Studio Professional users on Windows. There is no Eclipse, MonoDevelop or Emacs support for any of the language features",
+                "accessdate": "2012-10-12",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://www.zdnet.com/microsoft-typescript-can-the-father-of-c-save-us-from-the-tyranny-of-javascript-7000005054/",
+                "title": "Microsoft TypeScript: Can the father of C# save us from the tyranny of JavaScript?",
+                "date": "2012-10-01",
+                "publisher": "ZDNet",
+                "quote": "And I think this is a pretty big misstep. If you're building web apps that run on anything other than Windows, you're likely using a Mac and most likely not using Visual Studio. You need the Visual Studio plug-in to get the IntelliSense. All you get without Visual Studio is the strong-typing. You don't get the productivity benefits you get from IntelliSense..",
+                "accessdate": "2012-10-12",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://www.heise.de/developer/meldung/TypeScript-Unterstuetzung-fuer-Eclipse-1930408.html",
+                "title": "TypeScript-Unterstützung für Eclipse",
+                "date": "6 August 2013",
+                "work": "heise Developer",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://marketplace.eclipse.org/content/typescript#.VAmSNvm1bYg",
+                "title": "TypeScript",
+                "work": "Eclipse Marketplace",
+                "publisher": "Eclipse Foundation",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://www.drdobbs.com/windows/working-with-typescript-in-visual-studio/240154792",
+                "title": "Working with TypeScript in Visual Studio 2012",
+                "date": "14 May 2013",
+                "work": "Dr. Dobb's Journal",
+                "first": "Gastón",
+                "last": "Hillar",
+                "accessdate": "26 April 2015",
+                "archiveurl": "https://web.archive.org/web/20130609120158/http://www.drdobbs.com/windows/working-with-typescript-in-visual-studio/240154792",
+                "archivedate": "2013-06-09",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "https://github.com/TypeStrong/atom-typescript",
+                "title": "TypeStrong: The only TypeScript package you will ever need",
+                "accessdate": "21 July 2016",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "https://www.theregister.com/2013/06/18/typescript_update_0_9/",
+                "title": "TypeScript 0.9 arrives with new compiler, support for generics",
+                "date": "18 June 2013",
+                "work": "The Register",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://channel9.msdn.com/Events/Build/2014/3-576",
+                "title": "TypeScript",
+                "first": "Anders",
+                "last": "Hejlsberg",
+                "authorlink": "アンダース・ヘルスバーグ",
+                "date": "2 April 2014",
+                "publisher": "マイクロソフト",
+                "work": "Channel 9",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://www.pcworld.com/article/2101920/microsoft-typescript-graduates-to-visual-studio.html",
+                "title": "Microsoft TypeScript graduates to Visual Studio",
+                "first": "Joab",
+                "last": "Jackson",
+                "date": "25 February 2014",
+                "work": "PC World",
+                "publisher": "IDG",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://blogs.msdn.com/b/typescript/archive/2014/07/21/new-compiler-and-moving-to-github.aspx",
+                "title": "New Compiler and Moving to GitHub",
+                "date": "21 July 2014",
+                "publisher": "マイクロソフト",
+                "work": "TypeScript Language team blog",
+                "first": "Jonathan",
+                "last": "Turner",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "first": "Peter",
+                "last": "Bright",
+                "url": "http://arstechnica.com/information-technology/2016/09/typescript-microsofts-javascript-for-big-applications-reaches-version-2-0/",
+                "title": "TypeScript, Microsoft’s JavaScript for big applications, reaches version 2.0",
+                "work": "Ars Technica",
+                "publisher": "Condé Nast",
+                "date": "September 22, 2016",
+                "accessdate": "September 22, 2016",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "https://blogs.msdn.microsoft.com/typescript/2017/03/27/typescripts-new-release-cadence/",
+                "title": "TypeScript’s New Release Cadence",
+                "author": "Daniel Rosenwasser",
+                "date": "2017-03-27",
+                "accessdate": "2017-11-29",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Documentation - TypeScript 3.0",
+                "url": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html",
+                "website": "www.typescriptlang.org",
+                "access-date": "2023-01-27",
+                "language": "en",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Announcing TypeScript 4.0",
+                "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-4-0/",
+                "website": "TypeScript",
+                "date": "2020-08-20",
+                "access-date": "2023-01-27",
+                "language": "en-US",
+                "first": "Daniel",
+                "last": "Rosenwasser",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Announcing TypeScript 4.9",
+                "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-4-9/",
+                "website": "TypeScript",
+                "date": "2022-11-15",
+                "access-date": "2023-01-27",
+                "language": "en-US",
+                "first": "Daniel",
+                "last": "Rosenwasser",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Documentation - TypeScript 5.0",
+                "url": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-0.html",
+                "access-date": "2023-05-18",
+                "website": "www.typescriptlang.org",
+                "language": "en",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "マイクロソフト、TypeScriptのコンパイラなどをGo言語に移植することで10倍の処理速度に",
+                "url": "https://www.publickey1.jp/blog/25/typescriptgo10.html",
+                "website": "www.publickey1.jp",
+                "access-date": "2025-03-13",
+                "language": "ja",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "Why Go? · microsoft typescript-go · Discussion #411",
+                "url": "https://github.com/microsoft/typescript-go/discussions/411#discussioncomment-12476218",
+                "website": "GitHub",
+                "access-date": "2025-03-13",
+                "language": "en",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "TypeScript、パフォーマンス改善のためにネイティブ実装の取り組みを発表 ——ネイティブ実装にGo言語を使い、ビルド時間（tsc）は10倍の速度改善",
+                "url": "https://gihyo.jp/article/2025/03/typescript-native-port",
+                "website": "gihyo.jp",
+                "date": "2025-03-12",
+                "access-date": "2025-03-13",
+                "language": "ja",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "title": "A 10x Faster TypeScript",
+                "url": "https://devblogs.microsoft.com/typescript/typescript-native-port/",
+                "website": "TypeScript",
+                "date": "2025-03-11",
+                "access-date": "2025-03-13",
+                "language": "en-US",
+                "first": "Anders",
+                "last": "Hejlsberg",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "name": "\"typescript-native-port\"",
+                "template": "citation"
+              }
+            ]
+          },
+          {
+            "title": "背景",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptはマイクロソフトやその外部の顧客たちの間で、JavaScriptで大規模アプリケーション開発をする上での欠点を補うために作られた."
+                  },
+                  {
+                    "text": "複雑なJavaScriptコードを扱うのは困難なことから、JavaScript言語の中でコンポーネント群を開発するのを容易にするための自作ツールが必要になった."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptの開発者は、標準との互換性や、クロスプラットフォームサポートを壊さないで済む解決策を模索した.",
+                    "links": [
+                      {
+                        "text": "互換性",
+                        "type": "internal",
+                        "page": "互換性"
+                      },
+                      {
+                        "text": "クロスプラットフォーム",
+                        "type": "internal",
+                        "page": "クロスプラットフォーム"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "現在のECMAScript言語標準が将来的にクラスベースオブジェクト指向をサポートする提案があることを踏まえ、TypeScriptはその提案に基づくことになった.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "ECMAScript"
+                      },
+                      {
+                        "text": "クラスベース",
+                        "type": "internal",
+                        "page": "クラスベース"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "これにより、その提案に基づいたスーパーセットであり、幾つかの点で言語の文法を拡張したJavaScriptコンパイラへと至ることとなった."
+                  },
+                  {
+                    "text": "このコンパイラが、言語を拡張した部分を一般的な JavaScriptへと変換する仕組みである."
+                  },
+                  {
+                    "text": "この意味ではTypeScriptはECMAScript 2015において期待されている機能を先取りするようなものであるともいえる."
+                  },
+                  {
+                    "text": "ECMAScriptの提案にないがTypeScriptに独自に搭載された機能として、静的言語解析を可能にする静的型付け機能（使用するかどうかは選択可能）がある.",
+                    "links": [
+                      {
+                        "text": "静的型付け",
+                        "type": "internal",
+                        "page": "静的型付け"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "これは諸ツールやIDEによるサポートを容易にする."
+                  }
+                ]
+              }
+            ],
+            "references": [
+              {
+                "url": "http://www.hanselminutes.com/340/what-is-typescript-and-why-with-anders-hejlsberg",
+                "title": "What is TypeScript and why with Anders Hejlsberg",
+                "author": "Anders Hejlsberg",
+                "publisher": "www.hanselminutes.com",
+                "date": "2012-10-05",
+                "accessdate": "2014-01-15",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://blogs.msdn.com/b/somasegar/archive/2012/10/01/typescript-javascript-development-at-application-scale.aspx",
+                "title": "TypeScript: JavaScript Development at Application Scale",
+                "author": "S. Somasegar",
+                "publisher": "msdn.com",
+                "date": "2012-10-01",
+                "accessdate": "2013-11-27",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "言語の特徴",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptはJavaScript（ECMAScript 5）に次のような言語機能の拡張を加えたものである.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "ECMAScript"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "ECMAScript 6由来"
+                  },
+                  {
+                    "text": "ECMAScript 7由来"
+                  },
+                  {
+                    "text": "独自"
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "構文的には、静的型付けやクラス、継承、インタフェースのようなオブジェクト指向、名前空間などの機能を追加する、ECMA-262 言語標準のマイクロソフトによる実装であるJScript.NETとTypeScriptはよく似ている.",
+                    "links": [
+                      {
+                        "text": "JScript.NET",
+                        "type": "internal",
+                        "page": "JScript"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "list": [
+                  "交差型",
+                  "en",
+                  "Intersection type"
+                ],
+                "template": "仮リンク"
+              }
+            ],
+            "lists": [
+              [
+                {
+                  "text": "クラス",
+                  "links": [
+                    {
+                      "text": "クラス",
+                      "type": "internal",
+                      "page": "クラス (コンピュータ)"
+                    }
+                  ]
+                },
+                {
+                  "text": "アロー関数式（無名関数）",
+                  "links": [
+                    {
+                      "text": "無名関数",
+                      "type": "internal",
+                      "page": "無名関数"
+                    }
+                  ]
+                },
+                {
+                  "text": "オプション引数、デフォルト引数"
+                },
+                {
+                  "text": "let, const"
+                },
+                {
+                  "text": "テンプレート文字列：文字列内への変数埋め込み",
+                  "links": [
+                    {
+                      "text": "文字列内への変数埋め込み",
+                      "type": "internal",
+                      "page": "文字列補間"
+                    }
+                  ]
+                },
+                {
+                  "text": "モジュール",
+                  "links": [
+                    {
+                      "text": "モジュール",
+                      "type": "internal",
+                      "page": "モジュール"
+                    }
+                  ]
+                },
+                {
+                  "text": "for/of"
+                },
+                {
+                  "text": "分割代入"
+                },
+                {
+                  "text": "Symbol"
+                }
+              ],
+              [
+                {
+                  "text": "デコレーター"
+                },
+                {
+                  "text": "async/await",
+                  "links": [
+                    {
+                      "text": "async/await",
+                      "type": "internal",
+                      "page": "async/await"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "text": "型注釈（変数、引数、戻り値などの型宣言）とコンパイル時の型チェック"
+                },
+                {
+                  "text": "型推論、型ガード - if文の instanceof などを利用した型推論",
+                  "links": [
+                    {
+                      "text": "型推論",
+                      "type": "internal",
+                      "page": "型推論"
+                    }
+                  ]
+                },
+                {
+                  "text": "インタフェース",
+                  "links": [
+                    {
+                      "text": "インタフェース",
+                      "type": "internal",
+                      "page": "インタフェース (情報技術)"
+                    }
+                  ]
+                },
+                {
+                  "text": "列挙型",
+                  "links": [
+                    {
+                      "text": "列挙型",
+                      "type": "internal",
+                      "page": "列挙型"
+                    }
+                  ]
+                },
+                {
+                  "text": "Mixin",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Mixin"
+                    }
+                  ]
+                },
+                {
+                  "text": "ジェネリック",
+                  "links": [
+                    {
+                      "text": "ジェネリック",
+                      "type": "internal",
+                      "page": "ジェネリックプログラミング"
+                    }
+                  ]
+                },
+                {
+                  "text": "名前空間",
+                  "links": [
+                    {
+                      "text": "名前空間",
+                      "type": "internal",
+                      "page": "名前空間"
+                    }
+                  ]
+                },
+                {
+                  "text": "タプル型",
+                  "links": [
+                    {
+                      "text": "タプル",
+                      "type": "internal",
+                      "page": "タプル"
+                    }
+                  ]
+                },
+                {
+                  "text": "共用体型、",
+                  "links": [
+                    {
+                      "text": "共用体",
+                      "type": "internal",
+                      "page": "共用体"
+                    }
+                  ]
+                },
+                {
+                  "text": "型エイリアス"
+                }
+              ]
+            ],
+            "references": [
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              }
+            ]
+          },
+          {
+            "title": "JavaScriptとの互換性",
+            "depth": 1,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScript はECMAScript 2015の厳密なスーパーセットであり、ECMAScript 2015はECMAScript 5（一般的にJavaScriptと呼ばれているもの）のスーパーセットである.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "ECMAScript"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "従って、JavaScriptプログラムは有効なTypeScriptプログラムでもあるので、TypeScriptプログラムはJavaScriptを境目なしに利用できる."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "デフォルト設定の場合、コンパイラはECMAScript 3を出力するが、オプションによりECMAScript 3から最新のECMAScriptまでの間で出力対象を選択することができる."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptでは、既存のJavaScriptコードを使うことができる."
+                  },
+                  {
+                    "text": "つまり、人気のあるJavaScriptライブラリを取り入れることができ、他のJavaScriptからTypeScriptで作られたコードを呼ぶこともできる."
+                  },
+                  {
+                    "text": "これらの外部ライブラリに対する型宣言は、DefinitelyTyped（後述）に収録されていればnpmを用いて簡単にインストールすることができる.",
+                    "links": [
+                      {
+                        "text": "npm",
+                        "type": "internal",
+                        "page": "npm (パッケージ管理ツール)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "references": [
+              {
+                "url": "https://angular.io/docs/ts/latest/guide/upgrade.html",
+                "title": "Angular 2",
+                "website": "angular.io",
+                "access-date": "2016-05-04",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html",
+                "title": "Consumption · TypeScript",
+                "accessdate": "2017-11-29",
+                "template": "citation",
+                "type": "web"
+              },
+              {
+                "url": "http://www.typescriptlang.org/",
+                "title": "Welcome to TypeScript",
+                "work": "typescriptlang.org",
+                "publisher": "マイクロソフト",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "型アノテーション",
+            "depth": 1,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptはコンパイル時における型検査を可能にするために、型アノテーションによる静的型付けの仕組みを提供している.",
+                    "links": [
+                      {
+                        "text": "コンパイル時",
+                        "type": "internal",
+                        "page": "コンパイル時"
+                      },
+                      {
+                        "text": "型検査",
+                        "type": "internal",
+                        "page": "型システム",
+                        "anchor": "型検査"
+                      },
+                      {
+                        "text": "静的型付け",
+                        "type": "internal",
+                        "page": "型システム",
+                        "anchor": "静的な型付けと動的な型付け"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "この仕組みの利用は任意なので、この仕組みを無視して普通のJavaScriptの動的型付けを使うこともできる.",
+                    "links": [
+                      {
+                        "text": "動的型付け",
+                        "type": "internal",
+                        "page": "型システム",
+                        "anchor": "静的な型付けと動的な型付け"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "自体もTypeScriptで作成されている（セルフホスティング）.",
+                    "links": [
+                      {
+                        "text": "セルフホスティング",
+                        "type": "internal",
+                        "page": "セルフホスティング"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "これは通常のJavaScript にコンパイルでき、任意のホスト上のJavaScriptエンジン（たとえばブラウザなど）上で実行できる.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "JavaScriptエンジン"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "ライセンスは Apache License 2.0である.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Apache License"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "コンパイラ・パッケージはコンパイラを実行出来るスクリプトホストに同梱されてくる."
+                  },
+                  {
+                    "text": "Node.js等と共にコンパイラ・パッケージとして配布される場合もある.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Node.js"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "また、JavaScriptで書かれたクライアントサイドのコンパイラのアルファ版もある.",
+                    "links": [
+                      {
+                        "text": "アルファ版",
+                        "type": "internal",
+                        "page": "アルファ版"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "これはページロード中にTypeScriptコードを実行する."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "TypeScriptで書いたコードをブラウザ上で実行するにはコンパイルが必要."
+                  },
+                  {
+                    "text": "tsc --strict -t es5 *.ts"
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "code": "tsc --strict -t es5 *.ts",
+                "lang": "powershell",
+                "template": "syntaxhighlight"
+              }
+            ],
+            "references": [
+              {
+                "url": "https://github.com/niutech/typescript-compile",
+                "title": "niutech/typescript-compile",
+                "work": "GitHub",
+                "accessdate": "26 April 2015",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "開発環境",
+            "depth": 1,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "以下の統合開発環境やテキストエディタがTypeScriptに対応している.",
+                    "links": [
+                      {
+                        "text": "テキストエディタ",
+                        "type": "internal",
+                        "page": "テキストエディタ"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "lists": [
+              [
+                {
+                  "text": "Microsoft Visual Studio",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Microsoft Visual Studio"
+                    }
+                  ]
+                },
+                {
+                  "text": "2013 Update 2から標準搭載"
+                },
+                {
+                  "text": "JetBrains社によるReSharperプラグイン"
+                },
+                {
+                  "text": "Visual Studio Code",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Visual Studio Code"
+                    }
+                  ]
+                },
+                {
+                  "text": "WebMatrix",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "WebMatrix"
+                    }
+                  ]
+                },
+                {
+                  "text": "IntelliJ IDEA、WebStorm",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "IntelliJ IDEA"
+                    }
+                  ]
+                },
+                {
+                  "text": "Eclipse - Eclipse TypeScript Plug-in、TypEcs",
+                  "links": [
+                    {
+                      "text": "Eclipse TypeScript Plug-in",
+                      "type": "external",
+                      "site": "https://github.com/palantir/eclipse-typescript"
+                    },
+                    {
+                      "text": "TypEcs",
+                      "type": "external",
+                      "site": "http://typecsdev.com/"
+                    },
+                    {
+                      "text": "Eclipse",
+                      "type": "internal",
+                      "page": "Eclipse (統合開発環境)"
+                    }
+                  ]
+                },
+                {
+                  "text": "NetBeans - NetBeans TypeScript Editor",
+                  "links": [
+                    {
+                      "text": "NetBeans TypeScript Editor",
+                      "type": "external",
+                      "site": "https://github.com/Everlaw/nbts"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "NetBeans"
+                    }
+                  ]
+                },
+                {
+                  "text": "テキストエディタ - Sublime Text、Emacs、Vim",
+                  "links": [
+                    {
+                      "text": "テキストエディタ",
+                      "type": "internal",
+                      "page": "テキストエディタ"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "Sublime Text"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "Emacs"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "Vim"
+                    }
+                  ]
+                },
+                {
+                  "text": "クラウド型IDE - Cloud9 IDE、Codenvy、Codeanywhere",
+                  "links": [
+                    {
+                      "text": "クラウド",
+                      "type": "internal",
+                      "page": "クラウドコンピューティング"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "Cloud9 IDE"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "Codenvy"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "Codeanywhere"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "references": [
+              {
+                "template": "citation",
+                "type": "inline",
+                "data": {},
+                "inline": {}
+              }
+            ]
+          },
+          {
+            "title": "関連項目",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": []
+              }
+            ],
+            "lists": [
+              [
+                {
+                  "text": "JavaScript",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "JavaScript"
+                    }
+                  ]
+                },
+                {
+                  "text": "ECMAScript",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "ECMAScript"
+                    }
+                  ]
+                },
+                {
+                  "text": "Babel (トランスコンパイラ)",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Babel (トランスコンパイラ)"
+                    }
+                  ]
+                },
+                {
+                  "text": "Dart",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Dart"
+                    }
+                  ]
+                },
+                {
+                  "text": "AtScript",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "AtScript"
+                    }
+                  ]
+                },
+                {
+                  "text": "Node.js",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Node.js"
+                    }
+                  ]
+                },
+                {
+                  "text": "Deno",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "Deno"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "title": "注釈",
+            "depth": 0,
+            "templates": [
+              {
+                "list": [
+                  "2"
+                ],
+                "template": "reflist"
+              }
+            ]
+          },
+          {
+            "title": "外部リンク",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": []
+              }
+            ],
+            "templates": [
+              {
+                "template": "official website"
+              },
+              {
+                "list": [
+                  "Microsoft/TypeScript"
+                ],
+                "template": "github"
+              },
+              {
+                "template": "javascript"
+              },
+              {
+                "template": "microsoft apis"
+              },
+              {
+                "template": "マイクロソフト"
+              },
+              {
+                "template": "normdaten"
+              }
+            ],
+            "lists": [
+              []
+            ]
+          }
+        ]
+      },
       "name": "TypeScript",
-      "lang": "-"
+      "lang": "ja"
+    },
+    {
+      "found": true,
+      "title": "Varnish (ソフトウェア)",
+      "text": "Vinyl HTTP Cache（旧称Varnish ）は高負荷な動的サイト向けの高性能HTTPアクセラレータである. FreeBSDの有力開発者であるによって書かれた. 他の多くのHTTPアクセラレータはクライアントサイドのプロキシやWebサーバとして開発が始まったのに対して、VinylはゼロからHTTPアクセラレータとして設計された. VinylはSquidより10〜20倍高速であると公式サイトには書かれている.\n\n特徴の1つとしてESI（）が利用でき、同一ページ内の静的部分と動的部分を個別にキャッシュしたり制御したりできる. 例えば、あるページの静的部分は自身の持つキャッシュを利用し動的部分だけをアプリケーションサーバから取得し、結合後にクライアントにレスポンスを返すというような使い方ができる.\n\nキャッシュしたデータにあっては、プロセスのヒープや削除済ファイルなど永続的ではないストレージへの保存をサポートしている. 永続的ストレージへの保存は実装されているが、キャッシュデータのパージとVinylサーバの再起動が重なった際にキャッシュデータの一貫性管理が難しくなることを理由に非推奨（）かつ実験的（）としている. バージョン6以降、ビルド時に明示的に設定しない限り、永続的ストレージの機能は無効となっている.\n\nVarnish Cacheは長年FOSSプロジェクトとして 開発されてきたが、商標を保有する営利企業Varnish Softwareとの間で名称使用を巡る見解の相違が生じた. Varnish Software側は、Varnish Cacheの名称は同社が所有しており、明示的な許可なしでの使用は認められないとの立場を取った. 数か月にわたる交渉の結果、FOSSプロジェクト側は、名称使用が同社の拒否権に依存する形では独立性を維持できないと判断し、プロジェクト名の変更を決定した. これにより、バージョン8.0.0がVarnish Cacheの名称での最終リリースとなり、以降は新プロジェ クトThe Vinyl Cache Projectとして開発が継続される.\n\n",
+      "summary": "Vinyl HTTP Cache（旧称Varnish ）は高負荷な動的サイト向けの高性能HTTPアクセラレータである. FreeBSDの有力開発者であるによって書かれた. 他の多くのHTTPアクセラレータはクライアントサイドのプロキシやWebサーバとして開発が始まったのに対して、...",
+      "json": {
+        "title": "Vinyl HTTP Cache（旧称Varnish ）",
+        "isStub": true,
+        "categories": [
+          "オープンソースソフトウェア",
+          "ネットワークソフト",
+          "Cでプログラムされた自由ソフトウェア"
+        ],
+        "sections": [
+          {
+            "title": "",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Vinyl HTTP Cache（旧称Varnish ）は高負荷な動的サイト向けの高性能HTTPアクセラレータである.",
+                    "links": [
+                      {
+                        "text": "HTTP",
+                        "type": "internal",
+                        "page": "Hypertext Transfer Protocol"
+                      }
+                    ],
+                    "formatting": {
+                      "bold": [
+                        "Vinyl HTTP Cache（旧称Varnish ）"
+                      ]
+                    }
+                  },
+                  {
+                    "text": "FreeBSDの有力開発者であるによって書かれた.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "FreeBSD"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "他の多くのHTTPアクセラレータはクライアントサイドのプロキシやWebサーバとして開発が始まったのに対して、VinylはゼロからHTTPアクセラレータとして設計された.",
+                    "links": [
+                      {
+                        "text": "プロキシ",
+                        "type": "internal",
+                        "page": "プロキシ"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Webサーバ"
+                      },
+                      {
+                        "text": "HTTPアクセラレータ",
+                        "type": "internal",
+                        "page": "リバースプロキシ"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "VinylはSquidより10〜20倍高速であると公式サイトには書かれている.",
+                    "links": [
+                      {
+                        "text": "Squid",
+                        "type": "internal",
+                        "page": "Squid_(ソフトウェア)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "特徴の1つとしてESI（）が利用でき、同一ページ内の静的部分と動的部分を個別にキャッシュしたり制御したりできる."
+                  },
+                  {
+                    "text": "例えば、あるページの静的部分は自身の持つキャッシュを利用し動的部分だけをアプリケーションサーバから取得し、結合後にクライアントにレスポンスを返すというような使い方ができる.",
+                    "links": [
+                      {
+                        "text": "アプリケーションサーバ",
+                        "type": "internal",
+                        "page": "アプリケーションサーバ"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "キャッシュしたデータにあっては、プロセスのヒープや削除済ファイルなど永続的ではないストレージへの保存をサポートしている.",
+                    "links": [
+                      {
+                        "text": "プロセス",
+                        "type": "internal",
+                        "page": "プロセス"
+                      },
+                      {
+                        "text": "ヒープ",
+                        "type": "internal",
+                        "page": "ヒープ領域"
+                      },
+                      {
+                        "text": "永続的",
+                        "type": "internal",
+                        "page": "永続性"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "永続的ストレージへの保存は実装されているが、キャッシュデータのパージとVinylサーバの再起動が重なった際にキャッシュデータの一貫性管理が難しくなることを理由に非推奨（）かつ実験的（）としている.",
+                    "links": [
+                      {
+                        "text": "パージ",
+                        "type": "internal",
+                        "page": "パージ"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "バージョン6以降、ビルド時に明示的に設定しない限り、永続的ストレージの機能は無効となっている."
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "date": "2023年12月4日 (月) 07:19 (UTC)",
+                "template": "出典の明記"
+              },
+              {
+                "list": [
+                  "Poul-Henning Kamp",
+                  "en",
+                  "Poul-Henning Kamp"
+                ],
+                "template": "仮リンク"
+              },
+              {
+                "list": [
+                  "property",
+                  "preferred",
+                  "references",
+                  "edit",
+                  "Q1602447",
+                  "P348"
+                ],
+                "p548": "Q2804309",
+                "template": "wikidata2"
+              },
+              {
+                "list": [
+                  "qualifier",
+                  "preferred",
+                  "single",
+                  "raw",
+                  "Q1602447",
+                  "P348",
+                  "P577"
+                ],
+                "p548": "Q2804309",
+                "template": "wikidata2"
+              },
+              {
+                "template": "start date and age2"
+              },
+              {
+                "list": [
+                  "Poul-Henning Kamp",
+                  "en",
+                  "Poul-Henning Kamp"
+                ],
+                "template": "仮リンク"
+              },
+              {
+                "list": [
+                  "Edge Side Includes",
+                  "en",
+                  "Edge Side Includes"
+                ],
+                "template": "仮リンク"
+              },
+              {
+                "list": [
+                  "deprecated"
+                ],
+                "template": "lang-en-short"
+              },
+              {
+                "list": [
+                  "experimental"
+                ],
+                "template": "lang-en-short"
+              }
+            ],
+            "infoboxes": [
+              {
+                "名称": {
+                  "text": "Vinyl"
+                },
+                "開発者": {
+                  "text": ", Redpill-Linpro, Varnish Software"
+                },
+                "プログラミング言語": {
+                  "text": "C言語",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "C言語"
+                    }
+                  ]
+                },
+                "対応os": {
+                  "text": "BSD, Linux, UNIX",
+                  "links": [
+                    {
+                      "text": "BSD",
+                      "type": "internal",
+                      "page": "Berkeley Software Distribution"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "Linux"
+                    },
+                    {
+                      "type": "internal",
+                      "page": "UNIX"
+                    }
+                  ]
+                },
+                "種別": {
+                  "text": "リバースプロキシ",
+                  "links": [
+                    {
+                      "text": "リバースプロキシ",
+                      "type": "internal",
+                      "page": "リバースプロキシ"
+                    }
+                  ]
+                },
+                "ライセンス": {
+                  "text": "BSDライセンス",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "BSDライセンス"
+                    }
+                  ]
+                },
+                "公式サイト": {
+                  "text": "vinyl-cache.org"
+                }
+              }
+            ],
+            "references": [
+              {
+                "last": "Kamp",
+                "first": "Poul-Henning",
+                "date": "2014-05-26",
+                "title": "A persistent message",
+                "url": "https://varnish-cache.org/docs/trunk/phk/persistent.html",
+                "website": "Varnish Documentation",
+                "access-date": "2025-01-03",
+                "quote": "This worked well enough for our initial users, and they only used bans sporadically so that was cool too. In other words, a classic 20% effort, 80% benefit.  Unfortunately we have not been able to find time and money for the other 80% effort which gives the last 20% benefit, and therefor -spersistent has ended up in limbo.",
+                "template": "citation",
+                "type": "web"
+              }
+            ]
+          },
+          {
+            "title": "名称変更",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Varnish Cacheは長年FOSSプロジェクトとして 開発されてきたが、商標を保有する営利企業Varnish Softwareとの間で名称使用を巡る見解の相違が生じた."
+                  },
+                  {
+                    "text": "Varnish Software側は、Varnish Cacheの名称は同社が所有しており、明示的な許可なしでの使用は認められないとの立場を取った."
+                  },
+                  {
+                    "text": "数か月にわたる交渉の結果、FOSSプロジェクト側は、名称使用が同社の拒否権に依存する形では独立性を維持できないと判断し、プロジェクト名の変更を決定した."
+                  },
+                  {
+                    "text": "これにより、バージョン8.0.0がVarnish Cacheの名称での最終リリースとなり、以降は新プロジェ クトThe Vinyl Cache Projectとして開発が継続される."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "脚注",
+            "depth": 0,
+            "templates": [
+              {
+                "template": "reflist"
+              },
+              {
+                "template": "デフォルトソート:varnish"
+              },
+              {
+                "template": "software-stub"
+              }
+            ]
+          }
+        ]
+      },
+      "name": "Varnish_(ソフトウェア)",
+      "lang": "ja"
     },
     {
       "found": true,
@@ -17168,13 +21724,286 @@
       "lang": "ja"
     },
     {
-      "found": false,
+      "found": true,
       "title": "Vite",
-      "text": "",
-      "summary": "",
-      "json": {},
+      "text": "Vite（ヴィート、）は、（Vue.jsの作者）によって作られたローカルの開発用サーバーである.\n\nViteは、VueやReactのデフォルトのテンプレートに使われている. また、ViteはTypeScriptとJSXをデフォルトでサポートしている.\n\n編集中のファイルを監視し、ファイルの保存時に、WebブラウザはHot Module Replacement (HMR) というプロセスを通じて編集中のコードをリロードする. このプロセスは、アプリケーション全体を再コンパイルする代わりにES6モジュール (ESM) を使用して変更されている特定のファイルをリロードするだけで機能する.\n\nViteは、サーバーサイドレンダリング (SSR) の組み込みサポートを提供している. デフォルトの状態では、TCPポート5173でサーバーが起動する. Viteは、HTTPSおよび、WebSocketを含んだプロキシを介して、Apache HTTP ServerやlighttpdなどのバックエンドWebサーバーにコンテンツを提供できるように設定できる.\n\n\n * Bun\n * Vue\n\n\n * Vite - npm",
+      "summary": "Vite（ヴィート、）は、（Vue.jsの作者）によって作られたローカルの開発用サーバーである.\n\nViteは、VueやReactのデフォルトのテンプレートに使われている. また、ViteはTypeScriptとJSXをデフォルトでサポートしている.\n\n編集中のファイルを監視し、...",
+      "json": {
+        "title": "Vite",
+        "categories": [
+          "MITライセンスを利用するソフトウェア",
+          "2020年のソフトウェア",
+          "TypeScriptでプログラムされた自由ソフトウェア"
+        ],
+        "sections": [
+          {
+            "title": "",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": [
+                  {
+                    "text": "Vite（ヴィート、）は、（Vue.jsの作者）によって作られたローカルの開発用サーバーである.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "Vue.js"
+                      }
+                    ],
+                    "formatting": {
+                      "bold": [
+                        "Vite"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "Viteは、VueやReactのデフォルトのテンプレートに使われている.",
+                    "links": [
+                      {
+                        "text": "Vue",
+                        "type": "internal",
+                        "page": "Vue.js"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "React"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "また、ViteはTypeScriptとJSXをデフォルトでサポートしている.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "TypeScript"
+                      },
+                      {
+                        "text": "JSX",
+                        "type": "internal",
+                        "page": "JSX (JavaScript)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "編集中のファイルを監視し、ファイルの保存時に、WebブラウザはHot Module Replacement (HMR) というプロセスを通じて編集中のコードをリロードする."
+                  },
+                  {
+                    "text": "このプロセスは、アプリケーション全体を再コンパイルする代わりにES6モジュール (ESM) を使用して変更されている特定のファイルをリロードするだけで機能する."
+                  }
+                ]
+              },
+              {
+                "sentences": [
+                  {
+                    "text": "Viteは、サーバーサイドレンダリング (SSR) の組み込みサポートを提供している."
+                  },
+                  {
+                    "text": "デフォルトの状態では、TCPポート5173でサーバーが起動する."
+                  },
+                  {
+                    "text": "Viteは、HTTPSおよび、WebSocketを含んだプロキシを介して、Apache HTTP ServerやlighttpdなどのバックエンドWebサーバーにコンテンツを提供できるように設定できる.",
+                    "links": [
+                      {
+                        "type": "internal",
+                        "page": "HTTPS"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "WebSocket"
+                      },
+                      {
+                        "type": "internal",
+                        "page": "Apache HTTP Server"
+                      },
+                      {
+                        "text": "lighttpd",
+                        "type": "internal",
+                        "page": "lighttpd"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "templates": [
+              {
+                "list": [
+                  "尤雨溪",
+                  "zh",
+                  "尤雨溪"
+                ],
+                "template": "仮リンク"
+              },
+              {
+                "template": "date",
+                "data": {
+                  "year": "2020",
+                  "month": "04",
+                  "date": "20",
+                  "df": "yes/no",
+                  "template": "start date and age",
+                  "text": "April 20, 2020"
+                }
+              },
+              {
+                "template": "wikidata バージョン"
+              },
+              {
+                "template": "wikidata バージョン 出版日"
+              },
+              {
+                "list": [
+                  "Node.js",
+                  "Deno"
+                ],
+                "template": "cslist"
+              },
+              {
+                "transcription": "vi:t",
+                "template": "ipa"
+              },
+              {
+                "list": [
+                  "尤雨溪",
+                  "zh",
+                  "尤雨溪"
+                ],
+                "template": "仮リンク"
+              }
+            ],
+            "infoboxes": [
+              {
+                "名称": {
+                  "text": "Vite"
+                },
+                "ロゴ": {
+                  "text": "Vite Logo 2026.svg"
+                },
+                "初版": {
+                  "text": "April 20, 2020"
+                },
+                "プログラミング言語": {
+                  "text": "TypeScript",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "TypeScript"
+                    }
+                  ]
+                },
+                "種別": {
+                  "text": "開発用サーバー"
+                },
+                "ライセンス": {
+                  "text": "MITライセンス",
+                  "links": [
+                    {
+                      "type": "internal",
+                      "page": "MITライセンス"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "title": "関連項目",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": []
+              }
+            ],
+            "templates": [
+              {
+                "list": [
+                  "FOSS"
+                ],
+                "template": "ウィキポータルリンク"
+              }
+            ],
+            "lists": [
+              [
+                {
+                  "text": "Bun",
+                  "links": [
+                    {
+                      "text": "Bun",
+                      "type": "internal",
+                      "page": "Bun (ソフトウェア)"
+                    }
+                  ]
+                },
+                {
+                  "text": "Vue",
+                  "links": [
+                    {
+                      "text": "Vue",
+                      "type": "internal",
+                      "page": "Vue.js"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "title": "外部リンク",
+            "depth": 0,
+            "paragraphs": [
+              {
+                "sentences": []
+              }
+            ],
+            "templates": [
+              {
+                "template": "official website"
+              },
+              {
+                "list": [
+                  "vitejs/vite"
+                ],
+                "template": "github"
+              },
+              {
+                "template": "javascript"
+              },
+              {
+                "template": "デフォルトソート:ういいと"
+              }
+            ],
+            "lists": [
+              [
+                {
+                  "text": "Vite - npm",
+                  "links": [
+                    {
+                      "text": "Vite",
+                      "type": "external",
+                      "site": "https://www.npmjs.com/package/vite"
+                    },
+                    {
+                      "text": "npm",
+                      "type": "internal",
+                      "page": "Npm (パッケージ管理ツール)"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
       "name": "Vite",
-      "lang": "-"
+      "lang": "ja"
     }
   ]
 }
